@@ -29,6 +29,7 @@ public class Lector {
         caracteristicasBatman.add("Es millonario");
         caracteristicasBatman.add("Es muy inteligente");
         caracteristicasBatman.add("Es muy disciplinado");
+        caracteristicasBatman.add("Lleva 'man' en su nombre");
         //Creando las tarjetas
         Tarjeta batman = new Tarjeta("Batman","Bruno Díaz", 26, "Negro", poderesBatman, "Ciudad Gótica","Negros",gustosBatman);
         batman.setCaracteristicasExtra(caracteristicasBatman);
@@ -57,6 +58,8 @@ public class Lector {
         caracteristicasSpiderman.add("Usa lentes");
         caracteristicasSpiderman.add("Es muy inteligente");
         caracteristicasSpiderman.add("Es muy amigable");
+        caracteristicasSpiderman.add("Es un vengador");
+        caracteristicasSpiderman.add("Lleva 'man' en su nombre");
         //Creando las tarjetas
         Tarjeta spiderman = new Tarjeta("Spider-Man","Peter Parker", 17, "Castaño", poderesSpiderman, "Nueva York","Café",gustosSpiderman);
         spiderman.setCaracteristicasExtra(caracteristicasSpiderman);
@@ -84,18 +87,49 @@ public class Lector {
         caracteristicasSuperman.add("Usa lentes");
         caracteristicasSuperman.add("Trabaja en una empresa de periódicos");
         caracteristicasSuperman.add("Es muy amigable");
-        
+        caracteristicasSuperman.add("Lleva 'man' en su nombre");
         //Creando las tarjetas
         Tarjeta superman = new Tarjeta("Super-Man","Clark Kent", 28, "Castaño", poderesSuperman, "Metrópolis","Café",gustosSuperman);
         superman.setCaracteristicasExtra(caracteristicasSuperman);
         superman.setImagen("superman.jpg");
         
-        
         /*
-        Ironman
-        Thor
-        Wonderman
+        ###################################
+        IRON-MAN
+        ###################################
         */
+        LinkedList<String> gustosIronman = new LinkedList<>();
+        gustosIronman.add("Inventar cosas");
+        gustosIronman.add("Conducir carros");
+        gustosIronman.add("Disfrutar con amigos");
+        gustosIronman.add("Robots");
+        
+        LinkedList<String> poderesIronman = new LinkedList<>();
+        poderesIronman.add("Fuerza sobrehumana");
+        poderesIronman.add("Volar");
+        
+        LinkedList<String> caracteristicasIronman = new LinkedList<>();
+        caracteristicasIronman.add("Es muy inteligente");
+        caracteristicasIronman.add("Es millonario");
+        caracteristicasIronman.add("Es un vengador");
+        caracteristicasIronman.add("Lleva 'man' en su nombre");
+        
+        
+        //Creando las tarjetas
+        Tarjeta ironman = new Tarjeta("Iron-Man","Tony Stark", 30, "Negro", poderesIronman, "California","Negro",gustosIronman);
+        ironman.setCaracteristicasExtra(caracteristicasIronman);
+        ironman.setImagen("ironman.jpg");
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         return listaRetorno;
     }
     
