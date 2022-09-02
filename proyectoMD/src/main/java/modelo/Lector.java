@@ -121,6 +121,34 @@ public class Lector {
         ironman.setImagen("ironman.jpg");
         
         
+        /*
+        ###################################
+        THOR
+        ###################################
+        */
+        LinkedList<String> gustosThor = new LinkedList<>();
+        gustosThor.add("Inventar cosas");
+        gustosThor.add("Conducir carros");
+        gustosThor.add("Disfrutar con amigos");
+        gustosThor.add("Robots");
+        
+        LinkedList<String> poderesThor = new LinkedList<>();
+        poderesThor.add("Fuerza sobrehumana");
+        poderesThor.add("Volar");
+        
+        LinkedList<String> caracteristicasThor = new LinkedList<>();
+        caracteristicasIronman.add("Es muy inteligente");
+        caracteristicasIronman.add("Es millonario");
+        caracteristicasIronman.add("Es un vengador");
+        caracteristicasIronman.add("Lleva 'man' en su nombre");
+        
+        
+        //Creando las tarjetas
+        Tarjeta thor = new Tarjeta("Iron-Man","Tony Stark", 30, "Negro", poderesIronman, "California","Negro",gustosIronman);
+        ironman.setCaracteristicasExtra(caracteristicasIronman);
+        ironman.setImagen("ironman.jpg");
+        
+        
         
         
         
