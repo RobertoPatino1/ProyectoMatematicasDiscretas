@@ -17,6 +17,23 @@ public class Tarjeta {
     private String colorDeOjos;
     private LinkedList<String> gustos;
     private LinkedList<String> caracteristicasExtra;
+    private String imagen;
+
+    public String getNombrePersonaje() {
+        return nombrePersonaje;
+    }
+
+    public void setNombrePersonaje(String nombrePersonaje) {
+        this.nombrePersonaje = nombrePersonaje;
+    }
+
+    public LinkedList<String> getCaracteristicasExtra() {
+        return caracteristicasExtra;
+    }
+
+    public void setCaracteristicasExtra(LinkedList<String> caracteristicasExtra) {
+        this.caracteristicasExtra = caracteristicasExtra;
+    }
 
     public Tarjeta(String nombrePersonaje, String nombre, int edad, LinkedList<Tarjeta> enemigos, LinkedList<Tarjeta> amigos, String colorCabello, LinkedList<String> poderes, String ciudad, String colorDeOjos, LinkedList<String> gustos) {
         this.nombrePersonaje = nombrePersonaje;
@@ -40,6 +57,14 @@ public class Tarjeta {
         this.ciudad = ciudad;
         this.colorDeOjos = colorDeOjos;
         this.gustos = gustos;
+    }
+
+    public String getImagen() {
+        return imagen;
+    }
+
+    public void setImagen(String imagen) {
+        this.imagen = imagen;
     }
     
     

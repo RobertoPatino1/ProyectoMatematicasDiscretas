@@ -24,7 +24,7 @@ public class MainMenuController implements Initializable {
         App.setRoot("cinematica");
 
     }
-
+    
     @FXML
     private void salir(ActionEvent event) {
         System.exit(0);
