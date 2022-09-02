@@ -31,7 +31,8 @@ public class Lector {
         caracteristicasBatman.add("Es muy disciplinado");
         //Creando las tarjetas
         Tarjeta batman = new Tarjeta("Batman","Bruno Díaz", 26, "Negro", poderesBatman, "Ciudad Gótica","Negros",gustosBatman);
-        
+        batman.setCaracteristicasExtra(caracteristicasBatman);
+        batman.setImagen("batman.jpg");
         
         
         
@@ -85,9 +86,9 @@ public class Lector {
         caracteristicasSuperman.add("Es muy amigable");
         
         //Creando las tarjetas
-        Tarjeta superman = new Tarjeta("Spider-Man","Peter Parker", 17, "Castaño", poderesSpiderman, "Nueva York","Café",gustosSpiderman);
-        spiderman.setCaracteristicasExtra(caracteristicasSpiderman);
-        spiderman.setImagen("spiderman.jpg");
+        Tarjeta superman = new Tarjeta("Super-Man","Clark Kent", 28, "Castaño", poderesSuperman, "Metrópolis","Café",gustosSuperman);
+        superman.setCaracteristicasExtra(caracteristicasSuperman);
+        superman.setImagen("superman.jpg");
         
         
         /*
