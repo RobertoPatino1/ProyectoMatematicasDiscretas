@@ -5,6 +5,7 @@
  */
 package com.mycompany.proyectomd;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -19,13 +20,15 @@ public class MainMenuController implements Initializable {
     }    
 
     @FXML
-    private void jugar(ActionEvent event) {
-        //Se cambia a la ventana de la partida
+    private void jugar(ActionEvent event) throws IOException {
+        App.setRoot("cinematica");
+
     }
 
     @FXML
     private void salir(ActionEvent event) {
         System.exit(0);
     }
+    
     
 }
