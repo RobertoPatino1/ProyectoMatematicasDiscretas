@@ -69,7 +69,13 @@ public class Tarjeta {
     
     
     
+    public void addAmigo(Tarjeta t){
+        this.amigos.add(t);
+    }
     
+    public void addEnemigo(Tarjeta t){
+        this.enemigos.add(t);
+    }
     
     
     

@@ -318,7 +318,7 @@ public class Lector {
         
         //Creando las tarjetas
         Tarjeta duendeVerde = new Tarjeta("Duende verde","Norman Osborn", 23, "Rojo", poderesDuendeVerde, "Nueva York","Café",gustosDuendeVerde);
-        duendeVerde.setCaracteristicasExtra(caracteristicasLoki);
+        duendeVerde.setCaracteristicasExtra(caracteristicasDuendeVerde);
         duendeVerde.setImagen("duendeVerde.jpg");
         
         
@@ -328,33 +328,93 @@ public class Lector {
         ###################################
         */
         LinkedList<String> poderesGorr = new LinkedList<>();
-        poderesDuendeVerde.add("Fuerza sobrehumana");
-        poderesDuendeVerde.add("Resistencia sobrehumana");
+        poderesGorr.add("Fuerza sobrehumana");
+        poderesGorr.add("Resistencia sobrehumana");
         
         LinkedList<String> gustosGorr = new LinkedList<>();
         
         
         LinkedList<String> caracteristicasGorr = new LinkedList<>();
-        caracteristicasDuendeVerde.add("Dueño de la necroespada");
+        caracteristicasGorr.add("Dueño de la necroespada");
 
         
         
         //Creando las tarjetas
-        Tarjeta gorr = new Tarjeta("Duende verde","Norman Osborn", 23, "Rojo", poderesDuendeVerde, "Nueva York","Café",gustosDuendeVerde);
-        duendeVerde.setCaracteristicasExtra(caracteristicasLoki);
-        duendeVerde.setImagen("duendeVerde.jpg");
-        
+        Tarjeta gorr = new Tarjeta("Gorr","Gorr", 53, "No tiene cabello", poderesGorr, "El espacio","Negro",gustosGorr);
+        gorr.setCaracteristicasExtra(caracteristicasGorr);
+        gorr.setImagen("gorr.jpg");
         
         
         /*
-        GORR
+        ###################################
         MR FREEZE
+        ###################################
         */
+        LinkedList<String> poderesMrFreeze = new LinkedList<>();
+        poderesMrFreeze.add("Fuerza sobrehumana");
+        poderesMrFreeze.add("Resistencia sobrehumana");
+        
+        LinkedList<String> gustosMrFreeze = new LinkedList<>();
+        
+        
+        LinkedList<String> caracteristicasMrFreeze = new LinkedList<>();
+        caracteristicasMrFreeze.add("Resistencia sobrehumana");
+        caracteristicasMrFreeze.add("Regeneracion");
+
+        
+        
+        //Creando las tarjetas
+        Tarjeta mrFreeze = new Tarjeta("Mr Freeze","Victor Freeze", 45, "No tiene cabello", poderesMrFreeze, "Ciudad Gótica","Negro",gustosMrFreeze);
+        mrFreeze.setCaracteristicasExtra(caracteristicasMrFreeze);
+        mrFreeze.setImagen("mrfreeze.jpg");
+        
+        
+        batman.setAmigos(new LinkedList<>());
+        spiderman.setAmigos(new LinkedList<>());
+        superman.setAmigos(new LinkedList<>());
+        ironman.setAmigos(new LinkedList<>());
+        thor.setAmigos(new LinkedList<>());
+        
+        
+        batman.addAmigo(superman);
+        superman.addAmigo(batman);
+        spiderman.addAmigo(ironman);
+        ironman.addAmigo(spiderman);
+        ironman.addAmigo(thor);
+        thor.addAmigo(ironman);
         
         
         
         
+        batman.addEnemigo(guason);
+        batman.addEnemigo(mrFreeze);
+        guason.addEnemigo(batman);
+        mrFreeze.addEnemigo(batman);
         
+        superman.addEnemigo(lexLuthor);
+        lexLuthor.addEnemigo(superman);
+        
+        spiderman.addEnemigo(venom);
+        spiderman.addEnemigo(duendeVerde);
+        spiderman.addEnemigo(thanos);
+        
+        venom.addEnemigo(spiderman);
+        duendeVerde.addEnemigo(spiderman);
+        thanos.addEnemigo(spiderman);
+        
+        ironman.addEnemigo(thanos);
+        ironman.addEnemigo(loki);
+        
+        thanos.addEnemigo(ironman);
+        loki.addEnemigo(ironman);
+        
+        thor.addEnemigo(loki);
+        thor.addEnemigo(thanos);
+        thor.addEnemigo(gorr);
+        
+        thanos.addEnemigo(thor);
+        loki.addAmigo(thor);
+        gorr.addEnemigo(thor);
         
         
         
@@ -366,6 +426,14 @@ public class Lector {
         listaRetorno.add(superman);
         listaRetorno.add(ironman);
         listaRetorno.add(thor);
+        listaRetorno.add(guason);
+        listaRetorno.add(lexLuthor);
+        listaRetorno.add(thanos);
+        listaRetorno.add(venom);
+        listaRetorno.add(loki);
+        listaRetorno.add(duendeVerde);
+        listaRetorno.add(gorr);
+        listaRetorno.add(mrFreeze);
         
         
         return listaRetorno;

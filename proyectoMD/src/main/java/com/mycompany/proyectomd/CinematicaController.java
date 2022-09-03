@@ -5,6 +5,8 @@
  */
 package com.mycompany.proyectomd;
 
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -13,6 +15,7 @@ import javafx.fxml.Initializable;
 
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
 public class CinematicaController implements Initializable {
@@ -49,7 +52,7 @@ public class CinematicaController implements Initializable {
     
     
     private void cargarImagen(String ruta){
-        try ( InputStream input = new FileInputStream(App.pathImg + ruta)) {
+        try (FileInputStream input = new FileInputStream(App.pathImg + ruta)) {
             Image image = new Image(input);
             imgviewPersonaje.setImage(image);
 
@@ -57,7 +60,7 @@ public class CinematicaController implements Initializable {
             System.out.println("No se encuentra la imagen");
         }
 
-      }
-   }
+    }
+   
 
 }
