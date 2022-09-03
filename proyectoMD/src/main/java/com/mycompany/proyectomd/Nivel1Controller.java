@@ -52,7 +52,7 @@ public class Nivel1Controller implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        lblTitulo.setText("Relaciona a cada héroe con su villano!");
         llenarCampos1();
         llenarCampos2();
     }    
@@ -71,7 +71,7 @@ public class Nivel1Controller implements Initializable {
             ImageView imagen = new ImageView();
             System.out.println(t.getImagen());
             try(FileInputStream input = new FileInputStream("archivos/"+t.getImagen())){
-                Image foto = new Image(input, 120, 120, true, true);
+                Image foto = new Image(input, 150, 150, false, false);
                 
                 imagen.setImage(foto);
                 
@@ -81,9 +81,6 @@ public class Nivel1Controller implements Initializable {
                 TextField respuesta = new TextField();
                 
                 vbox.getChildren().addAll(imagen,lblNombre,respuesta);
-                
-                
-                
                 VBox.setMargin(imagen, new Insets(50, 0, 0, 20));
                 VBox.setMargin(lblNombre, new Insets(0, 20, 0, 20));
                 VBox.setMargin(respuesta, new Insets(0, 20, 0, 20));
@@ -103,7 +100,7 @@ public class Nivel1Controller implements Initializable {
             ImageView imagen = new ImageView();
             System.out.println(t.getImagen());
             try(FileInputStream input = new FileInputStream("archivos/"+t.getImagen())){
-                Image foto = new Image(input, 150, 150, true, true);
+                Image foto = new Image(input, 150, 150, false, false);
                 
                 imagen.setImage(foto);
                 

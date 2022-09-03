@@ -49,14 +49,15 @@ public class CinematicaController implements Initializable {
     private void llenarCampos(){
         cargarImagen("batman.jpg");
         lblTituloNivel.setText("Batman necesita tu ayuda!");
-        lblTextoCinematica.setText("Hola amigo, necesito tu ayuda para encontrar a\n todos"
-                + " los miembros de la liga de la justicia");
+        lblTextoCinematica.setText("Hola amigo, para mi siguiente misión necesito tu ayuda.\nDebo "
+                + " encontrar los enemigos de todos los superheroes que te\n mostraré en pantalla.\n"
+                + " Cuento contigo!");
     }
     
     
     private void cargarImagen(String ruta){
         try (FileInputStream input = new FileInputStream(App.pathImg + ruta)) {
-            Image image = new Image(input);
+            Image image = new Image(input,500,500,false,false);
             imgviewPersonaje.setImage(image);
 
         } catch (IOException e) {
