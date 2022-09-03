@@ -135,27 +135,26 @@ public class Lector {
         LinkedList<String> poderesThor = new LinkedList<>();
         poderesThor.add("Fuerza sobrehumana");
         poderesThor.add("Volar");
+        poderesThor.add("Controlar el trueno");
         
         LinkedList<String> caracteristicasThor = new LinkedList<>();
-        caracteristicasIronman.add("Es muy inteligente");
-        caracteristicasIronman.add("Es millonario");
-        caracteristicasIronman.add("Es un vengador");
-        caracteristicasIronman.add("Lleva 'man' en su nombre");
+        caracteristicasThor.add("Es un vengador");
+        caracteristicasThor.add("Tiene un martillo");
+        caracteristicasThor.add("Es un guardian de la galaxia");
+        caracteristicasThor.add("Le gustan los pancakes");
         
         
         //Creando las tarjetas
-        Tarjeta thor = new Tarjeta("Iron-Man","Tony Stark", 30, "Negro", poderesIronman, "California","Negro",gustosIronman);
-        ironman.setCaracteristicasExtra(caracteristicasIronman);
-        ironman.setImagen("ironman.jpg");
+        Tarjeta thor = new Tarjeta("Thor","Thor Odinson", 26, "Rubio", poderesThor, "Asgard","Café",gustosThor);
+        thor.setCaracteristicasExtra(caracteristicasThor);
+        thor.setImagen("thor.jpg");
         
         
-        
-        
-        
-        
-        
-        
-        
+        listaRetorno.add(batman);
+        listaRetorno.add(spiderman);
+        listaRetorno.add(superman);
+        listaRetorno.add(ironman);
+        listaRetorno.add(thor);
         
         
         return listaRetorno;
