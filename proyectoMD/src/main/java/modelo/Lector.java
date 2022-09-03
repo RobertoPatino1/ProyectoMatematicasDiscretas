@@ -296,14 +296,57 @@ public class Lector {
         //Creando las tarjetas
         Tarjeta loki = new Tarjeta("Loki","Loki Laufeyson", 23, "Negro", poderesLoki, "Asgard","Negro",gustosLoki);
         loki.setCaracteristicasExtra(caracteristicasLoki);
-        venom.setImagen("loki.jpg");
+        loki.setImagen("loki.jpg");
+        
+        /*
+        ###################################
+        DUENDE VERDE
+        ###################################
+        */
+        LinkedList<String> poderesDuendeVerde = new LinkedList<>();
+        poderesDuendeVerde.add("Fuerza sobrehumana");
+        
+        LinkedList<String> gustosDuendeVerde = new LinkedList<>();
+        
+        
+        LinkedList<String> caracteristicasDuendeVerde = new LinkedList<>();
+        caracteristicasDuendeVerde.add("Es un millonario");
+        caracteristicasDuendeVerde.add("Es muy inteligente");
+        caracteristicasDuendeVerde.add("Experto en ingenieria");
+
+        
+        
+        //Creando las tarjetas
+        Tarjeta duendeVerde = new Tarjeta("Duende verde","Norman Osborn", 23, "Rojo", poderesDuendeVerde, "Nueva York","Café",gustosDuendeVerde);
+        duendeVerde.setCaracteristicasExtra(caracteristicasLoki);
+        duendeVerde.setImagen("duendeVerde.jpg");
+        
+        
+        /*
+        ###################################
+        GORR
+        ###################################
+        */
+        LinkedList<String> poderesGorr = new LinkedList<>();
+        poderesDuendeVerde.add("Fuerza sobrehumana");
+        poderesDuendeVerde.add("Resistencia sobrehumana");
+        
+        LinkedList<String> gustosGorr = new LinkedList<>();
+        
+        
+        LinkedList<String> caracteristicasGorr = new LinkedList<>();
+        caracteristicasDuendeVerde.add("Dueño de la necroespada");
+
+        
+        
+        //Creando las tarjetas
+        Tarjeta gorr = new Tarjeta("Duende verde","Norman Osborn", 23, "Rojo", poderesDuendeVerde, "Nueva York","Café",gustosDuendeVerde);
+        duendeVerde.setCaracteristicasExtra(caracteristicasLoki);
+        duendeVerde.setImagen("duendeVerde.jpg");
         
         
         
         /*
-
-        LOKI
-        DUENDE VERDE
         GORR
         MR FREEZE
         */
