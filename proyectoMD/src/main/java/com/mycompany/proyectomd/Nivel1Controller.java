@@ -77,7 +77,7 @@ public class Nivel1Controller implements Initializable {
                 
                 Label lblNombre = new Label(t.getNombrePersonaje());
                 
-                
+                 
                 TextField respuesta = new TextField();
                 
                 vbox.getChildren().addAll(imagen,lblNombre,respuesta);
@@ -113,8 +113,12 @@ public class Nivel1Controller implements Initializable {
                 
                 vbox.setOnMouseClicked(e ->{
                     System.out.println("Se hace clic en el cuadro de: "+t.getNombrePersonaje());
+                    int index = Lector.generarTarjetas().indexOf(t);
                     
-                    VistaPersonajeController.personaje = t;
+                    
+                    
+                    
+                    VistaPersonajeController.personaje = Lector.generarTarjetas().get(index);
                     
                     try {
                         App.setRoot("vistaPersonaje");
