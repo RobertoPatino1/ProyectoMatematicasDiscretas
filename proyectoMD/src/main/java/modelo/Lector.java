@@ -12,6 +12,16 @@ public class Lector {
     public static LinkedList<Tarjeta> generarTarjetas(){
         LinkedList<Tarjeta> listaRetorno = new LinkedList<>();
         
+        
+        /*
+        ----------------------------------
+        SUPERHEROES
+        ----------------------------------
+        */
+        
+        
+        
+        
         /*
         ###################################
         BATMAN
@@ -148,6 +158,35 @@ public class Lector {
         Tarjeta thor = new Tarjeta("Thor","Thor Odinson", 26, "Rubio", poderesThor, "Asgard","Café",gustosThor);
         thor.setCaracteristicasExtra(caracteristicasThor);
         thor.setImagen("thor.jpg");
+        
+        
+        /*
+        ----------------------------------
+        VILLANOS
+        ----------------------------------
+        */
+        
+        
+        
+        /*
+        Joker
+        LEX LUTHOR
+        THANOS
+        VENOM
+        LOKI
+        DUENDE VERDE
+        GORR
+        MR FREEZE
+        */
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         listaRetorno.add(batman);
