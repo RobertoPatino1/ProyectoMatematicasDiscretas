@@ -172,44 +172,10 @@ public class Nivel1Controller implements Initializable {
             Scene scene = new Scene(fxmlLoader.load());
             st.setScene(scene);
             st.show();
-            countdown(st);
             
         } catch (IOException ex) {
             ex.printStackTrace();
         }
     }
-    
 
-        public void countdown(Stage s){
-        
-        Thread hilo = new Thread(new Runnable(){
-            @Override
-            public void run(){
-                
-                for(int i=15; i>=0; i--){
-                    int valor = i;
-                    
-                    try {
-                        Thread.sleep(1000);
-                        Platform.runLater(new Runnable(){
-                            @Override
-                            public void run(){
-                            }
-                        });
-                        
-                    } catch (InterruptedException ex) {
-                        ex.printStackTrace();
-                    }
-                    
-                    if(valor==0){
-                        s.close();
-                    }
-                }
-            }
-            
-        });
-
-        hilo.start();
-
-    }
 }
