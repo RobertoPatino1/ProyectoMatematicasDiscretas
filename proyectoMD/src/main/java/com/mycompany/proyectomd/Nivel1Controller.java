@@ -111,6 +111,13 @@ public class Nivel1Controller implements Initializable {
                 vbox.getChildren().addAll(imagen,lblNombre);
                 
                 
+                vbox.setOnMouseClicked(e ->{
+                    System.out.println("Se hace clic en el cuadro de: "+t.getNombrePersonaje());
+                    
+                    
+                    
+                });
+                
                 
                 VBox.setMargin(imagen, new Insets(50, 0, 0, 20));
                 VBox.setMargin(lblNombre, new Insets(0, 20, 0, 20));
