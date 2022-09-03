@@ -55,6 +55,7 @@ public class VistaPersonajeController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         if(personaje!=null){
             lblTitulo.setText("");
+
             cargarImagen(personaje.getImagen());
             llenarCampos();
             countdown(lblTitulo);
@@ -136,8 +137,9 @@ public class VistaPersonajeController implements Initializable {
             }
             
         });
+        hilo.setDaemon(true);
         hilo.start();
- 
+        
 
 
         
