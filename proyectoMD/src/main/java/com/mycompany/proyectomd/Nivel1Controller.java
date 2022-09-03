@@ -65,7 +65,7 @@ public class Nivel1Controller implements Initializable {
     
     
     private void llenarCampos1(){
-        for(Tarjeta t:Lector.generarTarjetas()){
+        for(Tarjeta t:Lector.generarHeroes()){
             VBox vbox = new VBox(10);
             
             ImageView imagen = new ImageView();
@@ -94,7 +94,7 @@ public class Nivel1Controller implements Initializable {
         }
     }
     private void llenarCampos2(){
-        for(Tarjeta t:Lector.generarTarjetas()){
+        for(Tarjeta t:Lector.generarVillanos()){
             VBox vbox = new VBox(10);
             
             ImageView imagen = new ImageView();
@@ -115,6 +115,12 @@ public class Nivel1Controller implements Initializable {
                     System.out.println("Se hace clic en el cuadro de: "+t.getNombrePersonaje());
                     
                     VistaPersonajeController.personaje = t;
+                    
+                    try {
+                        App.setRoot("vistaPersonaje");
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                    }
                     
                     
                     
