@@ -57,7 +57,7 @@ public class VistaPersonajeController implements Initializable {
             lblTitulo.setText("");
             cargarImagen(personaje.getImagen());
             llenarCampos();
-            crearThreadNuevaVentana(lblTitulo);
+            countdown(lblTitulo);
             
             
         }else{
@@ -102,7 +102,7 @@ public class VistaPersonajeController implements Initializable {
     
     
     
-    public void crearThreadNuevaVentana(Label label){
+    public void countdown(Label label){
         
         Thread hilo = new Thread(new Runnable(){
             @Override
