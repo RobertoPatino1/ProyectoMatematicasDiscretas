@@ -48,8 +48,16 @@ public class CinematicaController implements Initializable {
     }
     
     
-    private void cargarImagen(String imagen){
-        
-    }
+    private void cargarImagen(String ruta){
+        try ( InputStream input = new FileInputStream(App.pathImg + ruta)) {
+            Image image = new Image(input);
+            imgviewPersonaje.setImage(image);
+
+        } catch (IOException e) {
+            System.out.println("No se encuentra la imagen");
+        }
+
+      }
+   }
 
 }
