@@ -114,6 +114,8 @@ public class Nivel1Controller implements Initializable {
                 vbox.setOnMouseClicked(e ->{
                     System.out.println("Se hace clic en el cuadro de: "+t.getNombrePersonaje());
                     
+                    VistaPersonajeController.personaje = t;
+                    
                     
                     
                 });
