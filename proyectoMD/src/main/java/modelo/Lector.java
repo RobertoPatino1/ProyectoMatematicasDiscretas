@@ -430,13 +430,13 @@ public class Lector {
         
         thanos.addEnemigo(ironman);
         loki.addEnemigo(ironman);
+        loki.addEnemigo(thor);
         
         thor.addEnemigo(loki);
         thor.addEnemigo(thanos);
         thor.addEnemigo(gorr);
         
         thanos.addEnemigo(thor);
-        loki.addAmigo(thor);
         gorr.addEnemigo(thor);
         
         

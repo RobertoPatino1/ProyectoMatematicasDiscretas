@@ -13,8 +13,10 @@ import java.util.LinkedList;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.geometry.Insets;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
@@ -27,6 +29,7 @@ import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
+import javafx.stage.Stage;
 import modelo.Lector;
 import modelo.Tarjeta;
 
@@ -119,12 +122,7 @@ public class Nivel1Controller implements Initializable {
                     
                     
                     VistaPersonajeController.personaje = Lector.generarTarjetas().get(index);
-                    
-                    try {
-                        App.setRoot("vistaPersonaje");
-                    } catch (IOException ex) {
-                        ex.printStackTrace();
-                    }
+                    cambiarDeVentana();
                     
                     
                     
@@ -160,6 +158,22 @@ public class Nivel1Controller implements Initializable {
     
     private LinkedList<Tarjeta> getListaNivel(){
         return Lector.generarTarjetas();
+    }
+    
+    
+    
+    private void cambiarDeVentana(){
+        try {
+            //muestra una nueva ventana para poder actualizar el stock de cualquier producto
+            Stage st = new Stage();
+            st.setTitle("Detalle");
+            FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("vistaPersonaje.fxml"));
+            Scene scene = new Scene(fxmlLoader.load());
+            st.setScene(scene);
+            st.show();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
     }
     
 }
