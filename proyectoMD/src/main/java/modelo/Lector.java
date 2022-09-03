@@ -34,6 +34,8 @@ public class Lector {
         gustosBatman.add("Hacer ejercicio");
         
         LinkedList<String> poderesBatman = new LinkedList<>();
+        poderesBatman.add("Experto en combate");
+        poderesBatman.add("Alta resistencia");
         
         LinkedList<String> caracteristicasBatman = new LinkedList<>();
         caracteristicasBatman.add("Es millonario");
@@ -69,6 +71,7 @@ public class Lector {
         caracteristicasSpiderman.add("Es muy inteligente");
         caracteristicasSpiderman.add("Es muy amigable");
         caracteristicasSpiderman.add("Es un vengador");
+        caracteristicasSpiderman.add("Trabaja en una empresa de periódicos");
         caracteristicasSpiderman.add("Lleva 'man' en su nombre");
         //Creando las tarjetas
         Tarjeta spiderman = new Tarjeta("Spider-Man","Peter Parker", 17, "Castaño", poderesSpiderman, "Nueva York","Café",gustosSpiderman);
@@ -88,6 +91,7 @@ public class Lector {
         
         LinkedList<String> poderesSuperman = new LinkedList<>();
         poderesSuperman.add("Fuerza sobrehumana");
+        poderesSuperman.add("Resistencia sobrehumana");
         poderesSuperman.add("Volar");
         poderesSuperman.add("Vision de rayos x");
         poderesSuperman.add("Vision de rayos laser");
@@ -98,6 +102,7 @@ public class Lector {
         caracteristicasSuperman.add("Trabaja en una empresa de periódicos");
         caracteristicasSuperman.add("Es muy amigable");
         caracteristicasSuperman.add("Lleva 'man' en su nombre");
+        caracteristicasSuperman.add("Es un alien");
         //Creando las tarjetas
         Tarjeta superman = new Tarjeta("Super-Man","Clark Kent", 28, "Castaño", poderesSuperman, "Metrópolis","Café",gustosSuperman);
         superman.setCaracteristicasExtra(caracteristicasSuperman);
@@ -122,6 +127,7 @@ public class Lector {
         caracteristicasIronman.add("Es muy inteligente");
         caracteristicasIronman.add("Es millonario");
         caracteristicasIronman.add("Es un vengador");
+        caracteristicasIronman.add("Experto en ingenieria");
         caracteristicasIronman.add("Lleva 'man' en su nombre");
         
         
@@ -155,7 +161,7 @@ public class Lector {
         
         
         //Creando las tarjetas
-        Tarjeta thor = new Tarjeta("Thor","Thor Odinson", 26, "Rubio", poderesThor, "Asgard","Café",gustosThor);
+        Tarjeta thor = new Tarjeta("Thor","Thor Odinson", 25, "Rubio", poderesThor, "Asgard","Café",gustosThor);
         thor.setCaracteristicasExtra(caracteristicasThor);
         thor.setImagen("thor.jpg");
         
@@ -166,13 +172,136 @@ public class Lector {
         ----------------------------------
         */
         
+        /*
+        ###################################
+        GUASON
+        ###################################
+        */
+        LinkedList<String> poderesGuason = new LinkedList<>();
+        poderesGuason.add("Experto en combate");
+        
+        LinkedList<String> gustosGuason = new LinkedList<>();
+        
+        LinkedList<String> caracteristicasGuason = new LinkedList<>();
+        caracteristicasGuason.add("Experto en quimica");
+        caracteristicasGuason.add("Experto en ingenieria");
+
+        
+        
+        //Creando las tarjetas
+        Tarjeta guason = new Tarjeta("Guason","Guason", 32, "Verde", poderesGuason, "Ciudad Gótica","Negro",gustosGuason);
+        guason.setCaracteristicasExtra(caracteristicasGuason);
+        guason.setImagen("guason.jpg");
         
         
         /*
-        Joker
+        ###################################
         LEX LUTHOR
+        ###################################
+        */
+        LinkedList<String> podereslexLuthor = new LinkedList<>();
+        podereslexLuthor.add("Experto en combate");
+        
+        LinkedList<String> gustosLexLuthor = new LinkedList<>();
+        
+        LinkedList<String> caracteristicasLexLuthor = new LinkedList<>();
+        caracteristicasLexLuthor.add("Es muy inteligente");
+        caracteristicasLexLuthor.add("Es millonario");
+        caracteristicasLexLuthor.add("Experto en ingenieria");
+
+        
+        
+        //Creando las tarjetas
+        Tarjeta lexLuthor = new Tarjeta("Lex Luthor","Lex Luthor", 35, "No tiene cabello", podereslexLuthor, "Metrópolis","Verde",gustosLexLuthor);
+        lexLuthor.setCaracteristicasExtra(caracteristicasLexLuthor);
+        lexLuthor.setImagen("lexluthor.jpg");
+        
+        
+        /*
+        ###################################
         THANOS
+        ###################################
+        */
+        LinkedList<String> poderesThanos = new LinkedList<>();
+        poderesThanos.add("Fuerza sobrehumana");
+        poderesThanos.add("Control sobre las gemas del infinito");
+        poderesThanos.add("Resistencia sobrehumana");
+        
+        LinkedList<String> gustosThanos = new LinkedList<>();
+        
+        LinkedList<String> caracteristicasThanos = new LinkedList<>();
+        caracteristicasThanos.add("Es un alien");
+        caracteristicasThanos.add("Posee el guantelete del infinito");
+        caracteristicasThanos.add("Tiene un ejército");
+        caracteristicasThanos.add("Su piel es morada");
+
+        
+        
+        //Creando las tarjetas
+        Tarjeta thanos = new Tarjeta("Thanos","Thanos", 1000, "No tiene cabello", poderesThanos, "El espacio","Morado",gustosThanos);
+        thanos.setCaracteristicasExtra(caracteristicasThanos);
+        thanos.setImagen("thanos.jpg");
+        
+        
+        /*
+        ###################################
         VENOM
+        ###################################
+        */
+        LinkedList<String> poderesVenom = new LinkedList<>();
+        poderesVenom.add("Fuerza sobrehumana");
+        poderesVenom.add("Trepar paredes");
+        poderesVenom.add("Resistencia sobrehumana");
+        poderesVenom.add("Regeneracion");
+        poderesVenom.add("Sentido aracnido");
+        
+        LinkedList<String> gustosVenom = new LinkedList<>();
+        gustosVenom.add("Chocolate");
+        
+        
+        LinkedList<String> caracteristicasVenom = new LinkedList<>();
+        caracteristicasVenom.add("Odia los sonidos fuertes");
+        caracteristicasVenom.add("No le gusta el fuego");
+        caracteristicasVenom.add("Es un alien");
+        caracteristicasVenom.add("Trabaja en una empresa de periódicos");
+
+        
+        
+        //Creando las tarjetas
+        Tarjeta venom = new Tarjeta("Venom","Eddie Brock", 21, "Rubio", poderesVenom, "Nueva York","Negro",gustosVenom);
+        venom.setCaracteristicasExtra(caracteristicasVenom);
+        venom.setImagen("venom.jpg");
+        
+        
+        
+        /*
+        ###################################
+        LOKI
+        ###################################
+        */
+        LinkedList<String> poderesLoki = new LinkedList<>();
+        poderesLoki.add("Magia");
+        poderesLoki.add("Cambiar de forma");
+        
+        LinkedList<String> gustosLoki = new LinkedList<>();
+        
+        
+        LinkedList<String> caracteristicasLoki = new LinkedList<>();
+        caracteristicasLoki.add("Es hermano de Thor");
+        caracteristicasLoki.add("Es un alien");
+        caracteristicasLoki.add("Estuvo aliado con Thanos");
+
+        
+        
+        //Creando las tarjetas
+        Tarjeta loki = new Tarjeta("Loki","Loki Laufeyson", 23, "Negro", poderesLoki, "Asgard","Negro",gustosLoki);
+        loki.setCaracteristicasExtra(caracteristicasLoki);
+        venom.setImagen("loki.jpg");
+        
+        
+        
+        /*
+
         LOKI
         DUENDE VERDE
         GORR
