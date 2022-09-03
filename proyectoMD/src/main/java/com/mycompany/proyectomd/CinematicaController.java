@@ -34,12 +34,12 @@ public class CinematicaController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        llenarCampos();
     }    
     
     @FXML
-    private void nivel1(ActionEvent event) {
-        //Cambio de pantalla al primer nivel
+    private void nivel1(ActionEvent event) throws IOException {
+        App.setRoot("nivel1");
     }
     
     
@@ -47,7 +47,10 @@ public class CinematicaController implements Initializable {
     
     
     private void llenarCampos(){
-        
+        cargarImagen("batman.jpg");
+        lblTituloNivel.setText("Batman necesita tu ayuda!");
+        lblTextoCinematica.setText("Hola amigo, necesito tu ayuda para encontrar a\n todos"
+                + " los miembros de la liga de la justicia");
     }
     
     
@@ -61,6 +64,9 @@ public class CinematicaController implements Initializable {
         }
 
     }
+    
+    
+
    
 
 }

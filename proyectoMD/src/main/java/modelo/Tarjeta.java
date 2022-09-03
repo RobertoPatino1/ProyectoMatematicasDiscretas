@@ -3,6 +3,7 @@ package modelo;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.Objects;
 
 
 public class Tarjeta {
@@ -46,6 +47,35 @@ public class Tarjeta {
         this.ciudad = ciudad;
         this.colorDeOjos = colorDeOjos;
         this.gustos = gustos;
+    }
+
+    @Override
+    public String toString() {
+        return nombrePersonaje;
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Tarjeta other = (Tarjeta) obj;
+        if (!Objects.equals(this.nombrePersonaje, other.nombrePersonaje)) {
+            return false;
+        }
+        return true;
     }
 
     public Tarjeta(String nombrePersonaje,String nombre, int edad, String colorCabello, LinkedList<String> poderes, String ciudad, String colorDeOjos, LinkedList<String> gustos) {

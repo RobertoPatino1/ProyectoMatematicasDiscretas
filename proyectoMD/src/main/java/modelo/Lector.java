@@ -19,9 +19,6 @@ public class Lector {
         ----------------------------------
         */
         
-        
-        
-        
         /*
         ###################################
         BATMAN
@@ -374,6 +371,32 @@ public class Lector {
         superman.setAmigos(new LinkedList<>());
         ironman.setAmigos(new LinkedList<>());
         thor.setAmigos(new LinkedList<>());
+        
+        batman.setEnemigos(new LinkedList<>());
+        spiderman.setEnemigos(new LinkedList<>());
+        superman.setEnemigos(new LinkedList<>());
+        ironman.setEnemigos(new LinkedList<>());
+        thor.setEnemigos(new LinkedList<>());
+        
+        
+        guason.setAmigos(new LinkedList<>());
+        lexLuthor.setAmigos(new LinkedList<>());
+        thanos.setAmigos(new LinkedList<>());
+        venom.setAmigos(new LinkedList<>());
+        duendeVerde.setAmigos(new LinkedList<>());
+        loki.setAmigos(new LinkedList<>());
+        gorr.setAmigos(new LinkedList<>());
+        mrFreeze.setAmigos(new LinkedList<>());
+        
+        guason.setEnemigos(new LinkedList<>());
+        lexLuthor.setEnemigos(new LinkedList<>());
+        thanos.setEnemigos(new LinkedList<>());
+        venom.setEnemigos(new LinkedList<>());
+        duendeVerde.setEnemigos(new LinkedList<>());
+        loki.setEnemigos(new LinkedList<>());
+        gorr.setEnemigos(new LinkedList<>());
+        mrFreeze.setEnemigos(new LinkedList<>());
+        
         
         
         batman.addAmigo(superman);
