@@ -107,11 +107,8 @@ public class VistaPersonajeController implements Initializable {
         Thread hilo = new Thread(new Runnable(){
             @Override
             public void run(){
-                int valor2 = 0;
                 for(int i=15; i>=0; i--){
                     int valor = i;
-                    valor2 = i;
-                    System.out.println(valor);
                     try {
                         Thread.sleep(1000);
                         Platform.runLater(new Runnable(){
@@ -122,7 +119,7 @@ public class VistaPersonajeController implements Initializable {
                         });
                         
                     } catch (InterruptedException ex) {
-                        ex.printStackTrace();
+                        
                     }
                     if(valor==0){
                         final Stage stage = (Stage) label.getScene().getWindow();
