@@ -10,19 +10,22 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.stage.Stage;
 import modelo.Tarjeta;
 
 public class VistaPersonajeController implements Initializable {
-
+    boolean fin = false;
 
     @FXML
-    private Label lblTitulo;
+    public Label lblTitulo;
     @FXML
     private ImageView imgview;
     
@@ -51,8 +54,12 @@ public class VistaPersonajeController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         if(personaje!=null){
+            lblTitulo.setText("");
             cargarImagen(personaje.getImagen());
             llenarCampos();
+            crearThreadNuevaVentana(lblTitulo);
+            
+            
         }else{
             System.out.println("El personaje no se ha inicializado");
         }
@@ -91,6 +98,54 @@ public class VistaPersonajeController implements Initializable {
             lblGustos.setText(personaje.getGustos().toString());
         }
         lblDatos.setText(personaje.getCaracteristicasExtra().toString());
+    }
+    
+    
+    
+    public void crearThreadNuevaVentana(Label label){
+        
+        Thread hilo = new Thread(new Runnable(){
+            @Override
+            public void run(){
+                int valor2 = 0;
+                for(int i=15; i>=0; i--){
+                    int valor = i;
+                    valor2 = i;
+                    System.out.println(valor);
+                    try {
+                        Thread.sleep(1000);
+                        Platform.runLater(new Runnable(){
+                            @Override
+                            public void run(){
+                                label.setText("Tiempo restante: "+String.valueOf(valor) + " segundos");
+                            }
+                        });
+                        
+                    } catch (InterruptedException ex) {
+                        ex.printStackTrace();
+                    }
+                    if(valor==0){
+                        final Stage stage = (Stage) label.getScene().getWindow();
+
+                        Platform.runLater(new Runnable() {
+                            @Override
+                            public void run() {
+                                stage.close();
+                            }
+                        });   
+                    }
+
+                }
+            }
+            
+        });
+        hilo.start();
+ 
+
+
+        
+
+        
     }
     
 }
