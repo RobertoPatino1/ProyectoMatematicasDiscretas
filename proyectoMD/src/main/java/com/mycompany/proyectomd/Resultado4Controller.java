@@ -5,6 +5,7 @@
  */
 package com.mycompany.proyectomd;
 
+import com.mycompany.proyectomd.App;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URL;
@@ -41,10 +42,11 @@ public class Resultado4Controller implements Initializable {
     }    
     
     @FXML
-    private void switchToCinematica5(ActionEvent event) {
+    private void switchToCinematica5(ActionEvent event) throws IOException {
+        App.setRoot("nivel5");
     }
-    
-    
+
+
     private void llenarCampos(){
         cargarImagen("thor.jpg");
         lbl1.setText("\"Muchas gracias compañero. Esta información me ayudará mucho.\nAlgo curioso es que la relación se puede aplicar entre los heroes mismos.\nUn spiderman puede trepar muros así como otro spiderman del multiverso!\nEste tipo de relacion se conoce como:");
