@@ -6,9 +6,6 @@
 package com.mycompany.proyectomd;
 
 import com.mycompany.proyectomd.App;
-import com.mycompany.proyectomd.App;
-import com.mycompany.proyectomd.App;
-import com.mycompany.proyectomd.App;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URL;
@@ -25,7 +22,7 @@ import javafx.scene.image.ImageView;
  *
  * @author Det-Pc
  */
-public class Resultado5Controller implements Initializable {
+public class Resultado6Controller implements Initializable {
 
 
     @FXML
@@ -43,12 +40,12 @@ public class Resultado5Controller implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         llenarCampos();
     }    
-
-    @FXML
-    private void switchToNivel6(ActionEvent event) {
-        //Se cambia a la ventana del nivel 6
-    }
     
+    @FXML
+    private void finDelJuego(ActionEvent event) {
+       //Se cambia a la ventana final
+        
+    }
     private void llenarCampos(){
         cargarImagen("thanos.jpg");
         lbl1.setText("\"Muy bien hecho!\nAhora que conozco las alturas de cada villano puedo saber\ncomo ordenarlos de manera efectiva. \nEsta relación se conoce como relación:");
@@ -70,4 +67,6 @@ public class Resultado5Controller implements Initializable {
 
     }
     
+    
+
 }

@@ -49,11 +49,11 @@ public class Resultado4Controller implements Initializable {
 
     private void llenarCampos(){
         cargarImagen("thor.jpg");
-        lbl1.setText("\"Muchas gracias compañero. Esta información me ayudará mucho.\nAlgo curioso es que la relación se puede aplicar entre los heroes mismos.\nUn spiderman puede trepar muros así como otro spiderman del multiverso!\nEste tipo de relacion se conoce como:");
+        lbl1.setText("\"Muchas gracias compañero. Esta información me ayudará mucho.\nComo pudiste ver en los primeros ejemplos, esta relación\ncumple con las propiedades de ser simetrica,transitiva y reflexiva\nComo estas 3 propiedades se cumplen\npodemos decir que esta es una relación de:");
         
-        lbl2.setText("REFLEXIVA");
+        lbl2.setText("EQUIVALENCIA");
         
-        lbl3.setText("Usaremos estos datos para el futuro.\nMuchas gracias por tu ayuda compañero!\"");
+        lbl3.setText("Muchas gracias por tu ayuda compañero!\"");
     }
     
     
