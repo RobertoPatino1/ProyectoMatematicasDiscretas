@@ -12,7 +12,6 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectomd.Nivel2Controller">
    <top>
       <Label text="Relaciona a cada héroe con otros héroes" BorderPane.alignment="CENTER">
@@ -136,7 +135,7 @@
             <Insets bottom="20.0" />
          </BorderPane.margin>
          <children>
-            <Button mnemonicParsing="false" text="Terminar" />
+            <Button mnemonicParsing="false" onAction="#switchToComprobacion" text="Terminar" />
          </children>
       </HBox>
    </bottom>
