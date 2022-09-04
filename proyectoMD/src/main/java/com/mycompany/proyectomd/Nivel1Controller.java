@@ -198,10 +198,10 @@ public class Nivel1Controller implements Initializable {
                 VBox.setMargin(respuesta, new Insets(0, 20, 0, 20));
                 fp1.getChildren().add(vbox);
                 
-                if(!s.isEmpty()){
-//                    System.out.println(comprobarResultadosHeroes(t.getNombrePersonaje(), s.pop()));
-System.out.println(s.pop());
-                }
+//                if(!s.isEmpty()){
+////                    System.out.println(comprobarResultadosHeroes(t.getNombrePersonaje(), s.pop()));
+//System.out.println(s.pop());
+//                }
                 
             }catch(FileNotFoundException e){
                 System.out.println("No se encuentra el archivo");

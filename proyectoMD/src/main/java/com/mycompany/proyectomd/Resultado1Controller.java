@@ -41,7 +41,8 @@ public class Resultado1Controller implements Initializable {
     }    
     
     @FXML
-    private void siguienteNivel(ActionEvent event) {
+    private void siguienteNivel(ActionEvent event) throws IOException {
+        App.setRoot("nuevaCinematica");
     }
     
     private void llenarCampos(){
