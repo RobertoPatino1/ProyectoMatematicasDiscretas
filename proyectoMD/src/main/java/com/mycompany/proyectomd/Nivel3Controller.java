@@ -51,7 +51,11 @@ public class Nivel3Controller implements Initializable {
     }    
 
     @FXML
-    private void switchToResultados3(ActionEvent event) {
+    private void switchToResultados3(ActionEvent event) throws IOException {
+        App.setRoot("resultado3");
+        
+        System.out.println(comprobarH1(txtHeroe3.getText()));
+        System.out.println(comprobarH2(txtHeroe4.getText()));
     }
     
     
@@ -81,7 +85,6 @@ public class Nivel3Controller implements Initializable {
     
     private void cambiarDeVentana(){
         try {
-            //muestra una nueva ventana para poder actualizar el stock de cualquier producto
             Stage st = new Stage();
             st.setTitle("Detalle");
             FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("vistaPersonaje.fxml"));
@@ -111,6 +114,34 @@ public class Nivel3Controller implements Initializable {
             VistaPersonajeController.personaje = Lector.generarTarjetas().get(3);
             cambiarDeVentana();
         });
+    }
+    
+    
+    private int comprobarH1(String entrada){
+        String[] respuestas =entrada.split(",");
+        int resultado=0;
+        int r1=0;
+        int r2=0;
+        for(String respuesta:respuestas){
+            if(respuesta.trim().toUpperCase().equals("SPIDERMAN") || respuesta.trim().toUpperCase().equals("SPIDER MAN") || respuesta.trim().toUpperCase().equals("SPIDER-MAN")){
+                r1=1;
+            }
+            if(respuesta.trim().toUpperCase().equals("THOR")){
+                r2=1;
+            }
+        }
+        resultado=r1+r2;
+        return resultado; 
+    }
+    
+    private int comprobarH2(String respuesta){
+        int resultado=0;
+        int r1=0;
+            if(respuesta.trim().toUpperCase().equals("SPIDERMAN") || respuesta.trim().toUpperCase().equals("SPIDER MAN") || respuesta.trim().toUpperCase().equals("SPIDER-MAN")){
+                r1=1;
+            }
+        resultado=r1;
+        return resultado;
     }
     
     

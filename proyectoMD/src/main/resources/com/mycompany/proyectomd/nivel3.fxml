@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="449.0" prefWidth="690.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectomd.Nivel3Controller">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="449.0" prefWidth="698.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectomd.Nivel3Controller">
    <center>
       <HBox alignment="CENTER" prefHeight="406.0" prefWidth="784.0" BorderPane.alignment="CENTER">
          <children>
@@ -33,7 +33,7 @@
       </HBox>
    </center>
    <bottom>
-      <HBox prefHeight="168.0" prefWidth="690.0" BorderPane.alignment="CENTER">
+      <HBox alignment="CENTER" prefHeight="168.0" prefWidth="690.0" BorderPane.alignment="CENTER">
          <children>
             <VBox alignment="CENTER" prefHeight="168.0" prefWidth="241.0">
                <children>
@@ -79,9 +79,9 @@
                   <Button mnemonicParsing="false" onAction="#switchToResultados3" text="Terminar" />
                </children>
             </VBox>
-            <VBox alignment="CENTER" prefHeight="168.0" prefWidth="233.0">
+            <VBox alignment="CENTER" prefHeight="148.0" prefWidth="176.0">
                <children>
-                  <TextField fx:id="txtHeroe3">
+                  <TextField fx:id="txtHeroe3" prefHeight="25.0" prefWidth="140.0">
                      <VBox.margin>
                         <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
                      </VBox.margin>
