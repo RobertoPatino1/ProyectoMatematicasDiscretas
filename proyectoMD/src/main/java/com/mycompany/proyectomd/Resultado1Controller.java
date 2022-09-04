@@ -30,10 +30,14 @@ public class Resultado1Controller implements Initializable {
     private ImageView imgvPersonaje;
     @FXML
     private Label lblTexto;
+    @FXML
+    private Label lblRelacion;
+    @FXML
+    private Label lbl2;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-
+        llenarCampos();
     }    
     
     @FXML
@@ -42,9 +46,11 @@ public class Resultado1Controller implements Initializable {
     
     private void llenarCampos(){
         cargarImagen("batman.jpg");
-        lblTexto.setText("Muy bien amigo, para mi siguiente misión necesito tu ayuda.\nDebo "
-                + " encontrar los enemigos de todos los superheroes que te\n mostraré en pantalla.\n"
-                + " Cuento contigo!");
+        lblTexto.setText("Muy buen trabajo amigo. Ahora ya sé a que héroe llamar cuando me enfrente a un villano.\nComo puedes observar la relación de enemistad funciona en ambos sentidos\nSi Iron man es enemigo de Thanos entonces Thanos es enemigo de Iron man.\nA esto se la llama una relación: ");
+        
+        lblRelacion.setText("SIMÉTRICA");
+        
+        lbl2.setText("Este conocimiento te será útil en las siguientes misiones!");
     }
     
     

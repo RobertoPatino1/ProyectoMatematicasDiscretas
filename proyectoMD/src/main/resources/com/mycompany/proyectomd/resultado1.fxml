@@ -8,8 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectomd.Resultado1Controller">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="406.0" prefWidth="618.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectomd.Resultado1Controller">
    <top>
       <Label text="Resultados:" BorderPane.alignment="CENTER">
          <font>
@@ -23,7 +22,17 @@
             <ImageView fx:id="imgvPersonaje" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
             <Label fx:id="lblTexto" text="Label">
                <font>
-                  <Font size="15.0" />
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblRelacion" text="Label">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl2" text="Label">
+               <font>
+                  <Font size="17.0" />
                </font>
             </Label>
          </children>

@@ -64,11 +64,11 @@ public class Nivel1Controller implements Initializable {
     }    
 
     @FXML
-    private void comprobarResultados(ActionEvent event) {
+    private void comprobarResultados(ActionEvent event) throws IOException {
 //        System.out.println(comprobarResultadosBatman(entrada));
 //        System.out.println(comprobarResultadosSuperman(entrada));
 
-        //App.setRoot("Cinematica2Controller")
+        App.setRoot("resultado1");
         
     }
     
@@ -188,9 +188,6 @@ public class Nivel1Controller implements Initializable {
                 respuesta.setOnKeyTyped(eh ->{
                     System.out.println("Se escrbio: "+respuesta.getText());
                     s.push(respuesta.getText());
-
-                    
-                    
                     
                 });
                 
@@ -201,7 +198,10 @@ public class Nivel1Controller implements Initializable {
                 VBox.setMargin(respuesta, new Insets(0, 20, 0, 20));
                 fp1.getChildren().add(vbox);
                 
-                System.out.println(comprobarResultadosBatman(s.pop()));
+                if(!s.isEmpty()){
+//                    System.out.println(comprobarResultadosHeroes(t.getNombrePersonaje(), s.pop()));
+System.out.println(s.pop());
+                }
                 
             }catch(FileNotFoundException e){
                 System.out.println("No se encuentra el archivo");
