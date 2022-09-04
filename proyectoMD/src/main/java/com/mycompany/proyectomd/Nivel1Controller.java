@@ -10,6 +10,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URL;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.ResourceBundle;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -63,7 +64,108 @@ public class Nivel1Controller implements Initializable {
 
     @FXML
     private void comprobarResultados(ActionEvent event) {
+        
+        
+        
+        
+        
+
+        
+        
     }
+    
+    private boolean comprobarResultadosBatman(String entrada){
+        String[] respuestas =entrada.split(",");
+        boolean resultado=false;
+        boolean r1=false;
+        boolean r2=false;
+        for(String respuesta:respuestas){
+            if(respuesta.trim().toUpperCase()=="GUASON"){
+                r1=true;
+            }
+            if(respuesta.trim().toUpperCase()=="MR.FREEZE" || respuesta.trim().toUpperCase()=="MR. FREEZE"){
+                r2=true;
+            }
+        }  
+        
+        resultado=r1&&r2;
+        return resultado;
+    }
+    
+    private boolean comprobarResultadosSuperman(String entrada){
+        String[] respuestas =entrada.split(",");
+        boolean resultado=false;
+        boolean r1=false;
+        for(String respuesta:respuestas){
+            if(respuesta.trim().toUpperCase()=="LEX LUTHOR" || respuesta.trim().toUpperCase()=="LEXLUTHOR"){
+                r1=true;
+            }
+        }  
+        resultado=r1;
+        return resultado;
+    }
+    
+    
+    private boolean comprobarSpiderman(String entrada){
+        String[] respuestas =entrada.split(",");
+        boolean resultado=false;
+        boolean r1=false;
+        boolean r2=false;
+        boolean r3=false;
+        for(String respuesta:respuestas){
+            if(respuesta.trim().toUpperCase()=="VENOM"){
+                r1=true;
+            }
+            if(respuesta.trim().toUpperCase()=="THANOS"){
+                r2=true;
+            }
+            if(respuesta.trim().toUpperCase()=="DUENDE VERDE"|| respuesta.trim().toUpperCase()=="DUENDEVERDE"){
+                r3=true;
+            }
+        }  
+        
+        resultado=r1&&r2&&r3;
+        return resultado;
+    }
+    
+    private boolean comprobarIronman(String entrada){
+        String[] respuestas =entrada.split(",");
+        boolean resultado=false;
+        boolean r1=false;
+        boolean r2=false;
+        for(String respuesta:respuestas){
+            if(respuesta.trim().toUpperCase()=="THANOS"){
+                r1=true;
+            }
+            if(respuesta.trim().toUpperCase()=="LOKI"){
+                r2=true;
+            }
+        }  
+        
+        resultado=r1&&r2;
+        return resultado;
+    }
+    
+    private boolean comprobarResultadosThor(String entrada){
+        String[] respuestas =entrada.split(",");
+        boolean resultado=false;
+        boolean r1=false;
+        boolean r2=false;
+        for(String respuesta:respuestas){
+            if(respuesta.trim().toUpperCase()=="THANOS"){
+                r1=true;
+            }
+            if(respuesta.trim().toUpperCase()=="GORR"){
+                r2=true;
+            }
+        }  
+        
+        resultado=r1&&r2;
+        return resultado;
+    }
+    
+    
+    
     
     
     
