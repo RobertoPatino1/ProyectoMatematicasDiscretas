@@ -43,7 +43,7 @@ public class Resultado4Controller implements Initializable {
     
     @FXML
     private void switchToCinematica5(ActionEvent event) throws IOException {
-        App.setRoot("nivel5");
+        App.setRoot("cinematica5");
     }
 
 
