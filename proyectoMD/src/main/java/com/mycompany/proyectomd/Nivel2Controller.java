@@ -62,12 +62,14 @@ public class Nivel2Controller implements Initializable {
     }    
 
     @FXML
-    private void switchToComprobacion(ActionEvent event) {
+    private void switchToComprobacion(ActionEvent event) throws IOException {
        int r1 = comprobarSuperman(txtSuperman1.getText());
        int r2 = comprobarSpiderman(txtSpiderman1.getText());
        int r3 = comprobarThor(txtThor1.getText());
        int r4 = comprobarIronman(txtIronman1.getText());
         System.out.println(r1+r2+r3+r4);
+        
+        App.setRoot("resultado2");
     }
     
     

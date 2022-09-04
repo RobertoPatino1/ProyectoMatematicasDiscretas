@@ -5,6 +5,10 @@
  */
 package com.mycompany.proyectomd;
 
+import com.mycompany.proyectomd.App;
+import com.mycompany.proyectomd.App;
+import com.mycompany.proyectomd.App;
+import com.mycompany.proyectomd.App;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URL;
@@ -13,22 +17,25 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+/**
+ * FXML Controller class
+ *
+ * @author Det-Pc
+ */
+public class Resultado2Controller implements Initializable {
 
-public class CinematicaController implements Initializable {
-
 
     @FXML
-    private Label lblTituloNivel;
+    private ImageView imvSpiderman;
     @FXML
-    private Button btnJugar;
+    private Label lbl1;
     @FXML
-    private ImageView imgviewPersonaje;
+    private Label lbl2;
     @FXML
-    private Label lblTextoCinematica;
+    private Label lbl3;
     /**
      * Initializes the controller class.
      */
@@ -38,36 +45,28 @@ public class CinematicaController implements Initializable {
     }    
     
     @FXML
-    private void nivel1(ActionEvent event) throws IOException {
-        App.setRoot("nivel1");
+    private void switchToNivel3(ActionEvent event) throws IOException {
+        App.setRoot("nivel3");
     }
     
-    
-    
-    
-    
     private void llenarCampos(){
-        cargarImagen("batman.jpg");
-        lblTituloNivel.setText("Batman necesita tu ayuda!");
-        lblTextoCinematica.setText("\"Hola amigo, para mi siguiente misión necesito tu ayuda.\nDebo "
-                + " encontrar los enemigos de todos los superheroes que te\n mostraré en pantalla.\n"
-                + " Cuento contigo!\"");
+        cargarImagen("spiderman.jpg");
+        lbl1.setText("\"Muchas gracias compañero. Esta información me ayudará mucho.\nAlgo curioso es que la relación se puede aplicar entre los heroes mismos.\nUn spiderman puede trepar muros así como otro spiderman del multiverso!\nEste tipo de relacion se conoce como:");
+        
+        lbl2.setText("REFLEXIVA");
+        
+        lbl3.setText("Usaremos estos datos para el futuro.\nMuchas gracias por tu ayuda compañero!\"");
     }
     
     
     private void cargarImagen(String ruta){
         try (FileInputStream input = new FileInputStream(App.pathImg + ruta)) {
             Image image = new Image(input,500,500,false,false);
-            imgviewPersonaje.setImage(image);
+            imvSpiderman.setImage(image);
 
         } catch (IOException e) {
             System.out.println("No se encuentra la imagen");
         }
 
     }
-    
-    
-
-   
-
 }

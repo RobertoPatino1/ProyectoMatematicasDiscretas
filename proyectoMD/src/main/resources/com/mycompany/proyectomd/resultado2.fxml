@@ -8,7 +8,8 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="406.0" prefWidth="618.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectomd.Resultado1Controller">
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectomd.Resultado2Controller">
    <top>
       <Label text="Resultados:" BorderPane.alignment="CENTER">
          <font>
@@ -19,18 +20,18 @@
    <center>
       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fx:id="imgvPersonaje" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
-            <Label fx:id="lblTexto" contentDisplay="CENTER" text="Label">
+            <ImageView fx:id="imvSpiderman" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="lbl1" text="Label">
                <font>
                   <Font size="17.0" />
                </font>
             </Label>
-            <Label fx:id="lblRelacion" contentDisplay="CENTER" text="Label">
+            <Label fx:id="lbl2" text="Label">
                <font>
                   <Font name="System Bold Italic" size="17.0" />
                </font>
             </Label>
-            <Label fx:id="lbl2" contentDisplay="CENTER" text="Label">
+            <Label fx:id="lbl3" text="Label">
                <font>
                   <Font size="17.0" />
                </font>
@@ -39,13 +40,13 @@
       </VBox>
    </center>
    <bottom>
-      <Button mnemonicParsing="false" onAction="#siguienteNivel" text="Siguiente nivel!" BorderPane.alignment="CENTER">
-         <BorderPane.margin>
-            <Insets bottom="20.0" />
-         </BorderPane.margin>
+      <Button mnemonicParsing="false" onAction="#switchToNivel3" text="Siguiente nivel" BorderPane.alignment="CENTER">
          <font>
             <Font size="19.0" />
          </font>
+         <BorderPane.margin>
+            <Insets bottom="20.0" />
+         </BorderPane.margin>
       </Button>
    </bottom>
 </BorderPane>
