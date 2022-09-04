@@ -63,7 +63,11 @@ public class Nivel2Controller implements Initializable {
 
     @FXML
     private void switchToComprobacion(ActionEvent event) {
-        //Se pasa a la ventana de comprobacion
+       int r1 = comprobarSuperman(txtSuperman1.getText());
+       int r2 = comprobarSpiderman(txtSpiderman1.getText());
+       int r3 = comprobarThor(txtThor1.getText());
+       int r4 = comprobarIronman(txtIronman1.getText());
+        System.out.println(r1+r2+r3+r4);
     }
     
     
@@ -129,5 +133,100 @@ public class Nivel2Controller implements Initializable {
             VistaPersonajeController.personaje = Lector.generarTarjetas().get(3);
             cambiarDeVentana();
         });
+    }
+    
+    
+    
+    
+    private int comprobarSpiderman(String entrada){
+        String[] respuestas =entrada.split(",");
+        int resultado=0;
+        int r1=0;
+        int r2=0;
+        int r3 = 0;
+        for(String respuesta:respuestas){
+            if(respuesta.trim().toUpperCase().equals("SPIDERMAN") || respuesta.trim().toUpperCase().equals("SPIDER MAN") || respuesta.trim().toUpperCase().equals("SPIDER-MAN")){
+                r3=1;
+            }
+            if(respuesta.trim().toUpperCase().equals("SUPERMAN")){
+                r1=1;
+            }
+            if(respuesta.trim().toUpperCase().equals("THOR")){
+                r2=1;
+            }
+        }  
+        
+        resultado=r1+r2+r3;
+        return resultado;
+    }
+    
+    private int comprobarSuperman(String entrada){
+        String[] respuestas =entrada.split(",");
+        int resultado=0;
+        int r1=0;
+        int r2=0;
+        int r3=0;
+        int r4 = 0;
+        for(String respuesta:respuestas){
+            if(respuesta.trim().toUpperCase().equals("SUPERMAN")){
+                r4=1;
+            }
+            if(respuesta.trim().toUpperCase().equals("SPIDERMAN") || respuesta.trim().toUpperCase().equals("SPIDER MAN") || respuesta.trim().toUpperCase().equals("SPIDER-MAN")){
+                r1=1;
+            }
+            if(respuesta.trim().toUpperCase().equals("IRONMAN") || respuesta.trim().toUpperCase().equals("IRON-MAN")){
+                r2=1;
+            }
+            if(respuesta.trim().toUpperCase().equals("THOR")){
+                r3=1;
+            }
+        }  
+        
+        resultado=r1+r2+r3+r4;
+        return resultado;
+    }
+    
+    private int comprobarThor(String entrada){
+        String[] respuestas =entrada.split(",");
+        int resultado=0;
+        int r1=0;
+        int r2=0;
+        int r3 = 0;
+        for(String respuesta:respuestas){
+            if(respuesta.trim().toUpperCase().equals("THOR")){
+                r3 = 1;
+            }
+            if(respuesta.trim().toUpperCase().equals("SUPERMAN")){
+                r1=1;
+            }
+            if(respuesta.trim().toUpperCase().equals("SPIDERMAN") || respuesta.trim().toUpperCase().equals("SPIDER MAN") || respuesta.trim().toUpperCase().equals("SPIDER-MAN")){
+                r2=1;
+            }
+        }  
+        
+        resultado=r1+r2+r3;
+        return resultado;
+    }
+    
+    private int comprobarIronman(String entrada){
+        String[] respuestas =entrada.split(",");
+        int resultado=0;
+        int r1=0;
+        int r2=0;
+        int r3 = 0;
+        for(String respuesta:respuestas){
+            if(respuesta.trim().toUpperCase().equals("IRONMAN") || respuesta.trim().toUpperCase().equals("IRON-MAN")){
+                r3 = 1;
+            }
+            if(respuesta.trim().toUpperCase().equals("SUPERMAN")){
+                r1=1;
+            }
+            if(respuesta.trim().toUpperCase().equals("SPIDERMAN") || respuesta.trim().toUpperCase().equals("SPIDER MAN") || respuesta.trim().toUpperCase().equals("SPIDER-MAN")){
+                r2=1;
+            }
+        }  
+        
+        resultado=r1+r2+r3;
+        return resultado;
     }
 }

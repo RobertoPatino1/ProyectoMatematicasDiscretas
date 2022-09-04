@@ -50,10 +50,10 @@ public class NuevaCinematicaController implements Initializable {
     }
     
     
-        private void llenarCampos(){
+    private void llenarCampos(){
         cargarImagen("spiderman.jpg");
         lblTituloNivel.setText("Spider-Man necesita tu ayuda!");
-        lblTextoCinematica.setText("Hola compañero, necesito tu ayuda para un reportaje.\nVerás, necesito investigar que heroes tienen poderes en común, como por ejemplo:\nSaber que otro superheroe además de mi puede trepar muros.\nEste trabajo me sería util para poder apoyar a mis otros compañeros.\nCuento contigo amigo!");
+        lblTextoCinematica.setText("Hola compañero, necesito tu ayuda para un reportaje.\nVerás, necesito investigar que heroes tienen poderes en común, como por ejemplo:\nSaber qué superhéroes pueden trepar muros como yo.\nEste trabajo me sería util para poder apoyar a mis otros compañeros.\nCuento contigo amigo!");
     }
     
     
