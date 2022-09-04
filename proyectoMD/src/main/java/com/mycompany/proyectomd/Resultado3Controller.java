@@ -43,7 +43,7 @@ public class Resultado3Controller implements Initializable {
     
     @FXML
     private void switchToCinematica4(ActionEvent event) throws IOException {
-        App.setRoot("nivel4");
+        App.setRoot("cinematica4");
         
         
         
@@ -54,7 +54,7 @@ public class Resultado3Controller implements Initializable {
         
         lbl2.setText("TRANSITIVA");
         
-        lbl3.setText("\"Vaya, tu si que sabes mucho de números.\n Sigue así y quizás algún día podamos trabajar juntos\nen industrias Stark!\"");
+        lbl3.setText("Vaya, tu si que sabes mucho de números.\n Sigue así y quizás algún día podamos trabajar juntos\nen industrias Stark!\"");
     }
     
     

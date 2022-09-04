@@ -5,6 +5,10 @@
  */
 package com.mycompany.proyectomd;
 
+import com.mycompany.proyectomd.App;
+import com.mycompany.proyectomd.App;
+import com.mycompany.proyectomd.App;
+import com.mycompany.proyectomd.App;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URL;
@@ -13,7 +17,6 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -22,17 +25,17 @@ import javafx.scene.image.ImageView;
  *
  * @author Det-Pc
  */
-public class Cinematica4Controller implements Initializable {
+public class Resultado5Controller implements Initializable {
 
 
     @FXML
-    private Label lblTituloNivel;
+    private ImageView img;
     @FXML
-    private Button btnJugar;
+    private Label lbl1;
     @FXML
-    private ImageView imgViewPersonaje;
+    private Label lbl2;
     @FXML
-    private Label lblTextoCinematica;
+    private Label lbl3;
     /**
      * Initializes the controller class.
      */
@@ -40,26 +43,31 @@ public class Cinematica4Controller implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         llenarCampos();
     }    
-    
+
     @FXML
-    private void nivel4(ActionEvent event) throws IOException {
-        App.setRoot("nivel4");
+    private void switchToNivel6(ActionEvent event) {
+        //Se cambia a la ventana del nivel 6
     }
+    
     private void llenarCampos(){
-        cargarImagen("thor.jpg");
-        lblTextoCinematica.setText("\"Hola humano!\nDeseo que me ayudes con algo.\nVerás, debo saber como puedo relacionar a estos personajes por su color de pelo\nPor ejemplo: Qué vengadores tienen el mismo color de cabello?\nComo sabrás mi cabello es único e increible, pero debo conocer\ncomo puedo relacionar los cabellos de los demás.\nThor el dios del trueno cuenta contigo!\"");
+        cargarImagen("thanos.jpg");
+        lbl1.setText("\"Muy bien hecho!\nAhora que conozco las alturas de cada villano puedo saber\ncomo ordenarlos de manera efectiva. \nEsta relación se conoce como relación:");
+        
+        lbl2.setText("TRANSITIVA");
+        
+        lbl3.setText("Gracias a ti puedo decir que las alturas son\nperfectamente equilibradas.\nComo todo deberia estar\"");
     }
     
     
     private void cargarImagen(String ruta){
         try (FileInputStream input = new FileInputStream(App.pathImg + ruta)) {
             Image image = new Image(input,500,500,false,false);
-            imgViewPersonaje.setImage(image);
+            img.setImage(image);
 
         } catch (IOException e) {
             System.out.println("No se encuentra la imagen");
         }
 
     }
-
+    
 }

@@ -76,7 +76,8 @@ public class Nivel5Controller implements Initializable {
     }    
     
     @FXML
-    private void swtichToResultado5(ActionEvent event) {
+    private void swtichToResultado5(ActionEvent event) throws IOException {
+        App.setRoot("resultado5");
     }
     private void llenarCampos(){
         cargarImagen("duendeverde.jpg", imgDuende1);
