@@ -55,7 +55,7 @@ public class Resultado5Controller implements Initializable {
         
         lbl2.setText("ANTISIMETRICA");
         
-        lbl3.setText("\nLa relacion es antisimetrica ya que puedes decir que\nyo soy mas alto que el guason, pero\nel guason nunca será mas alto que mí.\nGracias a ti puedo decir que las alturas son\nperfectamente equilibradas.\nComo todo deberia estar\"");
+        lbl3.setText("\nLa relacion es antisimetrica ya que puedes decir que yo soy mas alto que el guason, pero\nel guason nunca será mas alto que mí.Gracias a ti puedo decir que las alturas son\nperfectamente equilibradas.Como todo deberia ser\"");
     }
     
     

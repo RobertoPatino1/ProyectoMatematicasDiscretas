@@ -40,7 +40,7 @@
                   <Font name="System Bold Italic" size="17.0" />
                </font>
             </Label>
-            <Label fx:id="lbl3" text="Label">
+            <Label fx:id="lbl3" alignment="CENTER" contentDisplay="CENTER" text="Label">
                <font>
                   <Font size="17.0" />
                </font>
