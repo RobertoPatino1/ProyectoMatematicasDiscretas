@@ -12,6 +12,7 @@ import java.net.URL;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.ResourceBundle;
+import java.util.Stack;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -64,104 +65,98 @@ public class Nivel1Controller implements Initializable {
 
     @FXML
     private void comprobarResultados(ActionEvent event) {
-        
-        
-        
-        
-        
+//        System.out.println(comprobarResultadosBatman(entrada));
+//        System.out.println(comprobarResultadosSuperman(entrada));
 
-        
+        //App.setRoot("Cinematica2Controller")
         
     }
     
-    private boolean comprobarResultadosBatman(String entrada){
-        String[] respuestas =entrada.split(",");
-        boolean resultado=false;
-        boolean r1=false;
-        boolean r2=false;
+    private int comprobarResultadosBatman(String entrada){
+        String[] respuestas =entrada.trim().split(",");
+
+        int r1=0;
+        int r2=0;
         for(String respuesta:respuestas){
-            if(respuesta.trim().toUpperCase()=="GUASON"){
-                r1=true;
+            if(respuesta.trim().toUpperCase().equals("GUASON")){
+
+                r1 = 1;
             }
-            if(respuesta.trim().toUpperCase()=="MR.FREEZE" || respuesta.trim().toUpperCase()=="MR. FREEZE"){
-                r2=true;
+            if(respuesta.trim().toUpperCase().equals("MR.FREEZE") || respuesta.trim().toUpperCase().equals("MR. FREEZE")){
+                r2=1;
             }
         }  
-        
-        resultado=r1&&r2;
-        return resultado;
+
+        return r1+r2;
     }
     
-    private boolean comprobarResultadosSuperman(String entrada){
-        String[] respuestas =entrada.split(",");
+    private int comprobarResultadosSuperman(String entrada){
+        String[] respuestas =entrada.trim().split(",");
         boolean resultado=false;
-        boolean r1=false;
+        int r1=0;
         for(String respuesta:respuestas){
             if(respuesta.trim().toUpperCase()=="LEX LUTHOR" || respuesta.trim().toUpperCase()=="LEXLUTHOR"){
-                r1=true;
+                r1=1;
             }
         }  
-        resultado=r1;
-        return resultado;
+
+        return r1;
     }
     
     
-    private boolean comprobarSpiderman(String entrada){
-        String[] respuestas =entrada.split(",");
-        boolean resultado=false;
-        boolean r1=false;
-        boolean r2=false;
-        boolean r3=false;
+    private int comprobarSpiderman(String entrada){
+        String[] respuestas =entrada.trim().split(",");
+
+        int r1=0;
+        int r2=0;
+        int r3 = 0;
         for(String respuesta:respuestas){
             if(respuesta.trim().toUpperCase()=="VENOM"){
-                r1=true;
+                r1=1;
             }
             if(respuesta.trim().toUpperCase()=="THANOS"){
-                r2=true;
+                r2=1;
             }
             if(respuesta.trim().toUpperCase()=="DUENDE VERDE"|| respuesta.trim().toUpperCase()=="DUENDEVERDE"){
-                r3=true;
+                r3=1;
             }
         }  
         
-        resultado=r1&&r2&&r3;
-        return resultado;
+        return r1+r2+r3;
     }
     
-    private boolean comprobarIronman(String entrada){
-        String[] respuestas =entrada.split(",");
-        boolean resultado=false;
-        boolean r1=false;
-        boolean r2=false;
+    private int comprobarIronman(String entrada){
+        String[] respuestas =entrada.trim().split(",");
+
+        int r1=0;
+        int r2=0;
         for(String respuesta:respuestas){
             if(respuesta.trim().toUpperCase()=="THANOS"){
-                r1=true;
+                r1=1;
             }
             if(respuesta.trim().toUpperCase()=="LOKI"){
-                r2=true;
+                r2=1;
             }
         }  
         
-        resultado=r1&&r2;
-        return resultado;
+
+        return r1+r2;
     }
     
-    private boolean comprobarResultadosThor(String entrada){
-        String[] respuestas =entrada.split(",");
+    private int comprobarResultadosThor(String entrada){
+        String[] respuestas =entrada.trim().split(",");
         boolean resultado=false;
-        boolean r1=false;
-        boolean r2=false;
+        int r1=0;
+        int r2=0;
         for(String respuesta:respuestas){
             if(respuesta.trim().toUpperCase()=="THANOS"){
-                r1=true;
+                r1=1;
             }
             if(respuesta.trim().toUpperCase()=="GORR"){
-                r2=true;
+                r2=1;
             }
-        }  
-        
-        resultado=r1&&r2;
-        return resultado;
+        }
+        return r1+r2;
     }
     
     
@@ -171,9 +166,11 @@ public class Nivel1Controller implements Initializable {
     
     
     private void llenarCampos1(){
+        
+        int puntosTotales = 0;
         for(Tarjeta t:Lector.generarHeroes()){
             VBox vbox = new VBox(10);
-            
+            Stack<String> s = new Stack<>();
             ImageView imagen = new ImageView();
             System.out.println(t.getImagen());
             try(FileInputStream input = new FileInputStream("archivos/"+t.getImagen())){
@@ -183,14 +180,29 @@ public class Nivel1Controller implements Initializable {
                 
                 Label lblNombre = new Label(t.getNombrePersonaje());
                 
-                 
-                TextField respuesta = new TextField();
                 
+                
+                 
+                TextField respuesta = new TextField(); 
+                
+                respuesta.setOnKeyTyped(eh ->{
+                    System.out.println("Se escrbio: "+respuesta.getText());
+                    s.push(respuesta.getText());
+
+                    
+                    
+                    
+                });
+                
+                System.out.println(respuesta.getText());
                 vbox.getChildren().addAll(imagen,lblNombre,respuesta);
                 VBox.setMargin(imagen, new Insets(50, 0, 0, 20));
                 VBox.setMargin(lblNombre, new Insets(0, 20, 0, 20));
                 VBox.setMargin(respuesta, new Insets(0, 20, 0, 20));
                 fp1.getChildren().add(vbox);
+                
+                System.out.println(comprobarResultadosBatman(s.pop()));
+                
             }catch(FileNotFoundException e){
                 System.out.println("No se encuentra el archivo");
             }catch(IOException e){
@@ -198,6 +210,8 @@ public class Nivel1Controller implements Initializable {
             }
             
         }
+        
+
     }
     private void llenarCampos2(){
         for(Tarjeta t:Lector.generarVillanos()){
@@ -221,6 +235,7 @@ public class Nivel1Controller implements Initializable {
                     System.out.println("Se hace clic en el cuadro de: "+t.getNombrePersonaje());
                     int index = Lector.generarTarjetas().indexOf(t);
                     
+
                     
                     
                     
@@ -246,23 +261,9 @@ public class Nivel1Controller implements Initializable {
     }
     
     
-    
-    private ComboBox<Tarjeta> crearCombo(Tarjeta tarjetaOG,LinkedList<Tarjeta> lista){
-        ComboBox<Tarjeta> cb = new ComboBox<>();
 
-        for(Tarjeta t: lista){
-            if(!tarjetaOG.equals(t)){
-                cb.getItems().add(t);
-            }
-        }
-        return cb;
-    }
     
-    
-    private LinkedList<Tarjeta> getListaNivel(){
-        return Lector.generarTarjetas();
-    }
-    
+
     
     
     private void cambiarDeVentana(){
@@ -278,6 +279,27 @@ public class Nivel1Controller implements Initializable {
         } catch (IOException ex) {
             ex.printStackTrace();
         }
+    }
+    
+    
+    private int comprobarResultadosHeroes(String heroe,String entrada) {
+        int resultado=0;
+        if(heroe.equals("Batman")){
+            resultado=comprobarResultadosBatman(entrada);
+        }
+        if(heroe.equals("Spiderman")){
+            resultado=comprobarSpiderman(entrada);
+        }
+        if(heroe.equals("Ironman")){
+            resultado=comprobarIronman(entrada);
+        }
+        if(heroe.equals("Thor")){
+            resultado=comprobarResultadosThor(entrada);
+        }
+        if(heroe.equals("Superman")){
+            resultado=comprobarResultadosSuperman(entrada);
+        }
+        return resultado;
     }
 
 }

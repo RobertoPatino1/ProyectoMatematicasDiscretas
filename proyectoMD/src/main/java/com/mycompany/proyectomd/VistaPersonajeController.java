@@ -108,7 +108,7 @@ public class VistaPersonajeController implements Initializable {
         Thread hilo = new Thread(new Runnable(){
             @Override
             public void run(){
-                for(int i=15; i>=0; i--){
+                for(int i=5; i>=0; i--){
                     int valor = i;
                     try {
                         Thread.sleep(1000);
