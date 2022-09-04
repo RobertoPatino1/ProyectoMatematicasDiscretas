@@ -50,7 +50,7 @@ public class Resultado3Controller implements Initializable {
     }
     private void llenarCampos(){
         cargarImagen("ironman.jpg");
-        lbl1.setText("\"Buen trabajo. Al decir que soy más viejo que Thor, y que Thor es más viejo que \nSpiderman, podemos llegar a la conclusión que también soy \nmás viejo que Spiderman. \nEsta relación se conoce como relación\"");
+        lbl1.setText("\"Buen trabajo. Al decir que soy más viejo que Thor, y que Thor es más viejo que \nSpiderman, podemos llegar a la conclusión que también soy \nmás viejo que Spiderman. \nEsta relación se conoce como relación:");
         
         lbl2.setText("TRANSITIVA");
         

@@ -46,7 +46,7 @@ public class Resultado2Controller implements Initializable {
     
     @FXML
     private void switchToNivel3(ActionEvent event) throws IOException {
-        App.setRoot("nivel3");
+        App.setRoot("cinematica3");
     }
     
     private void llenarCampos(){
