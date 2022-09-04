@@ -54,13 +54,50 @@ public class Nivel1Controller implements Initializable {
     private FlowPane fp1;
     @FXML
     private FlowPane fp2;
+    @FXML
+    private ImageView imgBatman1;
+    @FXML
+    private TextField txtBatman;
+    @FXML
+    private ImageView imgSpiderman1;
+    @FXML
+    private TextField txtSpiderman;
+    @FXML
+    private ImageView imgSuperman;
+    @FXML
+    private TextField txtSuperman;
+    @FXML
+    private ImageView imgIronman;
+    @FXML
+    private TextField txtIronman;
+    @FXML
+    private ImageView imgThor;
+    @FXML
+    private TextField txtThor;
+    @FXML
+    private ImageView imgDuende;
+    @FXML
+    private ImageView imgGorr;
+    @FXML
+    private ImageView imgGuason;
+    @FXML
+    private ImageView imgLex;
+    @FXML
+    private ImageView imgLoki;
+    @FXML
+    private ImageView imgMrFreeze;
+    @FXML
+    private ImageView imgVenom;
+    @FXML
+    private ImageView imgThanos;
 
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         lblTitulo.setText("Relaciona a cada héroe con su villano!");
-        llenarCampos1();
-        llenarCampos2();
+
+        llenarCampos();
+        preCambio();
     }    
 
     @FXML
@@ -161,109 +198,36 @@ public class Nivel1Controller implements Initializable {
     
     
     
-    
-    
-    
-    
-    private void llenarCampos1(){
-        
-        int puntosTotales = 0;
-        for(Tarjeta t:Lector.generarHeroes()){
-            VBox vbox = new VBox(10);
-            Stack<String> s = new Stack<>();
-            ImageView imagen = new ImageView();
-            System.out.println(t.getImagen());
-            try(FileInputStream input = new FileInputStream("archivos/"+t.getImagen())){
-                Image foto = new Image(input, 150, 150, false, false);
-                
-                imagen.setImage(foto);
-                
-                Label lblNombre = new Label(t.getNombrePersonaje());
-                
-                
-                
-                 
-                TextField respuesta = new TextField(); 
-                
-                respuesta.setOnKeyTyped(eh ->{
-                    System.out.println("Se escrbio: "+respuesta.getText());
-                    s.push(respuesta.getText());
-                    
-                });
-                
-                System.out.println(respuesta.getText());
-                vbox.getChildren().addAll(imagen,lblNombre,respuesta);
-                VBox.setMargin(imagen, new Insets(50, 0, 0, 20));
-                VBox.setMargin(lblNombre, new Insets(0, 20, 0, 20));
-                VBox.setMargin(respuesta, new Insets(0, 20, 0, 20));
-                fp1.getChildren().add(vbox);
-                
-//                if(!s.isEmpty()){
-////                    System.out.println(comprobarResultadosHeroes(t.getNombrePersonaje(), s.pop()));
-//System.out.println(s.pop());
-//                }
-                
-            }catch(FileNotFoundException e){
-                System.out.println("No se encuentra el archivo");
-            }catch(IOException e){
-                System.out.println("IOException");
-            }
-            
-        }
-        
+    private void llenarCampos(){
+        cargarImagen("batman.jpg", imgBatman1);
+        cargarImagen("superman.jpg", imgSuperman);
+        cargarImagen("spiderman.jpg", imgSpiderman1);
+        cargarImagen("thor.jpg", imgThor);
+        cargarImagen("ironman.jpg", imgIronman);
+        cargarImagen("gorr.jpg", imgGorr);
+        cargarImagen("duendeverde.jpg", imgDuende);
+        cargarImagen("thanos.jpg", imgThanos);
+        cargarImagen("venom.jpg", imgVenom);
+        cargarImagen("mrfreeze.jpg", imgMrFreeze);
+        cargarImagen("loki.jpg", imgLoki);
+        cargarImagen("lexluthor.jpg", imgLex);
+        cargarImagen("guason.jpg", imgGuason);
+
 
     }
-    private void llenarCampos2(){
-        for(Tarjeta t:Lector.generarVillanos()){
-            VBox vbox = new VBox(10);
-            
-            ImageView imagen = new ImageView();
-            System.out.println(t.getImagen());
-            try(FileInputStream input = new FileInputStream("archivos/"+t.getImagen())){
-                Image foto = new Image(input, 150, 150, false, false);
-                
-                imagen.setImage(foto);
-                
-                Label lblNombre = new Label(t.getNombrePersonaje());
-                
+    
+    
+    private void cargarImagen(String ruta,ImageView contenedor){
+        try (FileInputStream input = new FileInputStream(App.pathImg + ruta)) {
+            Image image = new Image(input,500,500,false,false);
+            contenedor.setImage(image);
 
-                
-                vbox.getChildren().addAll(imagen,lblNombre);
-                
-                
-                vbox.setOnMouseClicked(e ->{
-                    System.out.println("Se hace clic en el cuadro de: "+t.getNombrePersonaje());
-                    int index = Lector.generarTarjetas().indexOf(t);
-                    
-
-                    
-                    
-                    
-                    VistaPersonajeController.personaje = Lector.generarTarjetas().get(index);
-                    cambiarDeVentana();
-                    
-                    
-                    
-                });
-                
-                
-                VBox.setMargin(imagen, new Insets(50, 0, 0, 20));
-                VBox.setMargin(lblNombre, new Insets(0, 20, 0, 20));
-
-                fp2.getChildren().add(vbox);
-            }catch(FileNotFoundException e){
-                System.out.println("No se encuentra el archivo");
-            }catch(IOException e){
-                System.out.println("IOException");
-            }
-            
+        } catch (IOException e) {
+            System.out.println("No se encuentra la imagen");
         }
+
     }
     
-    
-
-    
-
     
     
     private void cambiarDeVentana(){
@@ -280,6 +244,46 @@ public class Nivel1Controller implements Initializable {
             ex.printStackTrace();
         }
     }
+    
+    
+    
+    private void preCambio(){
+        imgDuende.setOnMouseClicked(eh->{
+            VistaPersonajeController.personaje = Lector.generarTarjetas().get(10);
+            cambiarDeVentana();
+        });
+        imgGuason.setOnMouseClicked(eh->{
+            VistaPersonajeController.personaje = Lector.generarTarjetas().get(5);
+            cambiarDeVentana();
+        });
+        
+        imgLex.setOnMouseClicked(eh->{
+            VistaPersonajeController.personaje = Lector.generarTarjetas().get(6);
+            cambiarDeVentana();
+        });
+        imgMrFreeze.setOnMouseClicked(eh->{
+            VistaPersonajeController.personaje = Lector.generarTarjetas().get(12);
+            cambiarDeVentana();
+        });
+        imgThanos.setOnMouseClicked(eh->{
+            VistaPersonajeController.personaje = Lector.generarTarjetas().get(7);
+            cambiarDeVentana();
+        });
+        imgVenom.setOnMouseClicked(eh->{
+            VistaPersonajeController.personaje = Lector.generarTarjetas().get(8);
+            cambiarDeVentana();
+        });
+        imgGorr.setOnMouseClicked(eh->{
+            VistaPersonajeController.personaje = Lector.generarTarjetas().get(9);
+            cambiarDeVentana();
+        });
+        imgLoki.setOnMouseClicked(eh->{
+            VistaPersonajeController.personaje = Lector.generarTarjetas().get(7);
+            cambiarDeVentana();
+        });
+    }
+    
+
     
     
     private int comprobarResultadosHeroes(String heroe,String entrada) {
