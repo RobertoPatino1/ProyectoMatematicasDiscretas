@@ -30,35 +30,35 @@
                         <VBox prefHeight="200.0" prefWidth="100.0">
                            <children>
                               <ImageView fx:id="imgDuende1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
-                              <Label text="Duende verde" />
+                              <Label text="Duende verde es más alto que:" />
                               <TextField fx:id="txtDuende" />
                            </children>
                         </VBox>
                         <VBox prefHeight="200.0" prefWidth="100.0">
                            <children>
                               <ImageView fx:id="imgLexLuthor1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
-                              <Label text="Lex Luthor" />
+                              <Label text="Lex Luthor es más alto que:" />
                               <TextField fx:id="txtLex" />
                            </children>
                         </VBox>
                         <VBox prefHeight="200.0" prefWidth="100.0">
                            <children>
                               <ImageView fx:id="imgGuason1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
-                              <Label text="Guasón" />
+                              <Label text="Guasón es más alto que:" />
                               <TextField fx:id="txtGuason" />
                            </children>
                         </VBox>
                         <VBox prefHeight="200.0" prefWidth="100.0">
                            <children>
                               <ImageView fx:id="imgMrFreeze1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
-                              <Label text="Mr Freeze" />
+                              <Label text="Mr Freeze es más alto que:" />
                               <TextField fx:id="txtMrFreeze" />
                            </children>
                         </VBox>
                         <VBox prefHeight="200.0" prefWidth="100.0">
                            <children>
                               <ImageView fx:id="imgThanos1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
-                              <Label text="Thanos" />
+                              <Label text="Thanos es más alto que:" />
                               <TextField fx:id="txtThanos" />
                            </children>
                         </VBox>
