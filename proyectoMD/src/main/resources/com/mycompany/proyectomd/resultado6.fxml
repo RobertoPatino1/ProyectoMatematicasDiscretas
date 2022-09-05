@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectomd.Resultado6Controller">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="421.0" prefWidth="602.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectomd.Resultado6Controller">
    <top>
       <Label text="Resultados: " BorderPane.alignment="CENTER">
          <font>
@@ -17,7 +17,7 @@
       </Label>
    </top>
    <center>
-      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+      <VBox alignment="CENTER" prefHeight="258.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
             <Label fx:id="lblTotalPuntos" text="Label">
                <font>
@@ -44,7 +44,7 @@
       </VBox>
    </center>
    <bottom>
-      <Button mnemonicParsing="false" onAction="#finDelJuego" text="Siguiente!" BorderPane.alignment="CENTER">
+      <Button mnemonicParsing="false" onAction="#finDelJuego" prefHeight="8.0" prefWidth="69.0" text="Siguiente!" BorderPane.alignment="CENTER">
          <BorderPane.margin>
             <Insets bottom="20.0" />
          </BorderPane.margin>
