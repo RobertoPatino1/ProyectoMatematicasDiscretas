@@ -5,6 +5,7 @@
  */
 package com.mycompany.proyectomd;
 
+import com.mycompany.proyectomd.App;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URL;
@@ -17,7 +18,11 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-
+/**
+ * FXML Controller class
+ *
+ * @author Det-Pc
+ */
 public class CinematicaController implements Initializable {
 
 
@@ -46,6 +51,7 @@ public class CinematicaController implements Initializable {
     
     
     
+    
     private void llenarCampos(){
         cargarImagen("batman.jpg");
         lblTituloNivel.setText("Batman necesita tu ayuda!");
@@ -65,9 +71,5 @@ public class CinematicaController implements Initializable {
         }
 
     }
-    
-    
-
-   
 
 }
