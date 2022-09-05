@@ -6,6 +6,7 @@
 package com.mycompany.proyectomd;
 
 import com.mycompany.proyectomd.App;
+import static com.mycompany.proyectomd.Resultado2Controller.totalPuntos;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URL;
@@ -32,6 +33,8 @@ public class Resultado3Controller implements Initializable {
     private Label lbl3;
     @FXML
     private ImageView img;
+    @FXML
+    private Label lblTotalPuntos;
 
     /**
      * Initializes the controller class.
@@ -39,6 +42,7 @@ public class Resultado3Controller implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         llenarCampos();
+        lblTotalPuntos.setText("Obtuviste "+totalPuntos+" puntos de un total de 3");
     }    
     
     @FXML
