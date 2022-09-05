@@ -69,14 +69,7 @@ public class Nivel4Controller implements Initializable {
         System.out.println(Lector.generarTarjetas());
     }    
 
-    @FXML
-    private void switchToResultados3(ActionEvent event) throws IOException {
-        App.setRoot("resultado4");
-        
-        System.out.println("PUNTOS: "+comprobarResultados());
-        
-        Resultado3Controller.totalPuntos = comprobarResultados();
-    }
+
     
     
     
@@ -258,6 +251,16 @@ public class Nivel4Controller implements Initializable {
         resultado = comprobarIronman(txtIronman.getText())+
                 comprobarSuperman(txtSuperman.getText())+comprobarSpiderman(txtSpiderman.getText())+comprobarLoki(txtLoki.getText())+comprobarLoki(txtBatman.getText());
         return resultado;
+    }
+
+    @FXML
+    private void switchToResultados4(ActionEvent event) throws IOException {
+        
+        
+        System.out.println("PUNTOS: "+comprobarResultados());
+        
+        Resultado4Controller.totalPuntos = comprobarResultados();
+        App.setRoot("resultado4");
     }
 
 }
