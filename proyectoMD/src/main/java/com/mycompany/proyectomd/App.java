@@ -1,5 +1,6 @@
 package com.mycompany.proyectomd;
 
+import java.io.FileInputStream;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -7,6 +8,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import javafx.scene.image.Image;
 
 /**
  * JavaFX App
@@ -21,6 +23,9 @@ public class App extends Application {
         stage.setScene(scene);
         stage.show();
         stage.setTitle("Relaciona2!");
+        FileInputStream input = new FileInputStream("archivos/logo.jpg");
+        Image img = new Image(input);
+        stage.getIcons().add(img);
     }
 
     static void setRoot(String fxml) throws IOException {
