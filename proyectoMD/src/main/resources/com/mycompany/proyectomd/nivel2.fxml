@@ -12,126 +12,111 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="588.0" style="-fx-background-color: #9BF0F9; -fx-border-color: #01037B #01037B; -fx-border-width: 4; -fx-border-radius: 11;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectomd.Nivel6Controller">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #9BF0F9; -fx-border-color: #01037B #01037B; -fx-border-width: 4; -fx-border-radius: 11;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectomd.Nivel2Controller">
    <top>
-      <Label text="Relaciona a los personajes por su altura!" BorderPane.alignment="CENTER" style="-fx-text-fill: #01037B #01037B #01037B #01037B;">
+      <Label text="Relaciona a cada héroe con otros héroes!" BorderPane.alignment="CENTER">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
    </top>
    <center>
-      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <HBox alignment="CENTER" prefHeight="210.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
-            <ScrollPane hbarPolicy="NEVER" prefHeight="383.0" prefWidth="293.0" style="-fx-background-color: #9BF0F9; -fx-border-color: #01037B #01037B; -fx-border-width: 2; -fx-border-radius: 11;">
+            <ScrollPane hbarPolicy="NEVER" prefHeight="364.0" prefWidth="412.0" style="-fx-background-color: #9BF0F9; -fx-border-color: #01037B #01037B; -fx-border-width: 2; -fx-border-radius: 11;" >
                <content>
-                  <FlowPane alignment="CENTER" prefHeight="381.0" prefWidth="291.0">
+                  <FlowPane prefHeight="365.0" prefWidth="305.0">
                      <children>
-                        <VBox prefHeight="200.0" prefWidth="100.0">
+                        <VBox prefHeight="157.0" prefWidth="182.0">
                            <children>
-                              <ImageView fx:id="imgBatman1" fitHeight="139.0" fitWidth="183.0" pickOnBounds="true" preserveRatio="true" />
-                              <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="49.0" prefWidth="190.0" text="Batman tiene la misma &#10;altura o es más bajo que:" />
-                              <TextField fx:id="txtBatman" prefHeight="25.0" prefWidth="179.0" />
+                              <ImageView fx:id="imgvSuperman" fitHeight="140.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label text="Superman">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="txtSuperman1" prefHeight="25.0" prefWidth="139.0" />
                            </children>
                            <FlowPane.margin>
-                              <Insets bottom="20.0" right="20.0" />
+                              <Insets left="20.0" />
                            </FlowPane.margin>
                         </VBox>
                         <VBox prefHeight="200.0" prefWidth="100.0">
                            <children>
-                              <ImageView fx:id="imgSpiderman1" fitHeight="143.0" fitWidth="194.0" pickOnBounds="true" preserveRatio="true" />
-                              <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="49.0" prefWidth="190.0" text="Spiderman tiene la misma &#10;altura o es más bajo que:" />
-                              <TextField fx:id="txtSpiderman" prefHeight="25.0" prefWidth="179.0" />
+                              <ImageView fx:id="imgvSpiderman" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label text="Spider-Man" />
+                              <TextField fx:id="txtSpiderman1" />
                            </children>
                            <FlowPane.margin>
-                              <Insets bottom="20.0" right="20.0" />
+                              <Insets left="20.0" />
+                           </FlowPane.margin>
+                        </VBox>
+                        <VBox prefHeight="145.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fx:id="imgvThor" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label text="Thor" />
+                              <TextField fx:id="txtThor1" />
+                           </children>
+                           <FlowPane.margin>
+                              <Insets left="20.0" />
                            </FlowPane.margin>
                         </VBox>
                         <VBox prefHeight="200.0" prefWidth="100.0">
                            <children>
-                              <ImageView fx:id="imgSuperman1" fitHeight="136.0" fitWidth="186.0" pickOnBounds="true" preserveRatio="true" />
-                              <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="49.0" prefWidth="190.0" text="Superman tiene la misma &#10;altura o es más bajo que:" />
-                              <TextField fx:id="txtSuperman" prefHeight="25.0" prefWidth="179.0" />
+                              <ImageView fx:id="imgvIronman" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label text="Iron-Man" />
+                              <TextField fx:id="txtIronman1" />
                            </children>
                            <FlowPane.margin>
-                              <Insets bottom="20.0" right="20.0" />
-                           </FlowPane.margin>
-                        </VBox>
-                        <VBox prefHeight="200.0" prefWidth="100.0">
-                           <children>
-                              <ImageView fx:id="imgIronman" fitHeight="136.0" fitWidth="178.0" pickOnBounds="true" preserveRatio="true" />
-                              <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="49.0" prefWidth="190.0" text="Iron-Man tiene la misma &#10;altura o es más bajo que:" />
-                              <TextField fx:id="txtIronman" prefHeight="25.0" prefWidth="179.0" />
-                           </children>
-                           <FlowPane.margin>
-                              <Insets bottom="20.0" right="20.0" />
-                           </FlowPane.margin>
-                        </VBox>
-                        <VBox prefHeight="200.0" prefWidth="100.0">
-                           <children>
-                              <ImageView fx:id="imgThor" fitHeight="136.0" fitWidth="178.0" pickOnBounds="true" preserveRatio="true" />
-                              <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="49.0" prefWidth="190.0" text="Thor tiene la misma &#10;altura o es más bajo que:" />
-                              <TextField fx:id="txtThor" prefHeight="25.0" prefWidth="179.0" />
-                           </children>
-                           <FlowPane.margin>
-                              <Insets bottom="20.0" right="20.0" />
+                              <Insets left="20.0" />
                            </FlowPane.margin>
                         </VBox>
                      </children>
                   </FlowPane>
                </content>
             </ScrollPane>
-            <ScrollPane hbarPolicy="NEVER" prefHeight="383.0" prefWidth="308.0" style="-fx-background-color: #9BF0F9; -fx-border-color: #01037B #01037B; -fx-border-width: 2; -fx-border-radius: 11;">
+            <ScrollPane hbarPolicy="NEVER" prefHeight="364.0" prefWidth="399.0" style="-fx-background-color: #9BF0F9; -fx-border-color: #01037B #01037B; -fx-border-width: 2; -fx-border-radius: 11;" >
                <content>
-                  <FlowPane prefHeight="383.0" prefWidth="305.0">
+                  <FlowPane prefHeight="361.0" prefWidth="292.0">
                      <children>
-                        <VBox prefHeight="200.0" prefWidth="100.0">
+                        <VBox prefHeight="157.0" prefWidth="182.0">
                            <children>
-                              <ImageView fx:id="imgBatman11" fitHeight="136.0" fitWidth="178.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fx:id="imgvSuperman2" fitHeight="140.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label text="Superman">
                                  <VBox.margin>
                                     <Insets />
                                  </VBox.margin>
-                              </ImageView>
-                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="49.0" prefWidth="190.0" text="Batman" />
+                              </Label>
                            </children>
                            <FlowPane.margin>
-                              <Insets right="20.0" />
+                              <Insets left="20.0" />
                            </FlowPane.margin>
                         </VBox>
                         <VBox prefHeight="200.0" prefWidth="100.0">
                            <children>
-                              <ImageView fx:id="imgSpiderman11" fitHeight="136.0" fitWidth="178.0" pickOnBounds="true" preserveRatio="true" />
-                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="49.0" prefWidth="190.0" text="Spider-Man" />
+                              <ImageView fx:id="imgvSpiderman2" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label text="Spider-Man" />
                            </children>
                            <FlowPane.margin>
-                              <Insets right="20.0" />
+                              <Insets left="20.0" />
+                           </FlowPane.margin>
+                        </VBox>
+                        <VBox prefHeight="145.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fx:id="imgvThor2" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label text="Thor" />
+                           </children>
+                           <FlowPane.margin>
+                              <Insets left="20.0" />
                            </FlowPane.margin>
                         </VBox>
                         <VBox prefHeight="200.0" prefWidth="100.0">
                            <children>
-                              <ImageView fx:id="imgSuperman11" fitHeight="136.0" fitWidth="178.0" pickOnBounds="true" preserveRatio="true" />
-                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="49.0" prefWidth="190.0" text="Superman" />
+                              <ImageView fx:id="imgvIronman2" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label text="Iron-Man" />
                            </children>
                            <FlowPane.margin>
-                              <Insets right="20.0" />
-                           </FlowPane.margin>
-                        </VBox>
-                        <VBox prefHeight="200.0" prefWidth="100.0">
-                           <children>
-                              <ImageView fx:id="imgIronman1" fitHeight="136.0" fitWidth="178.0" pickOnBounds="true" preserveRatio="true" />
-                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="49.0" prefWidth="190.0" text="Iron-Man" />
-                           </children>
-                           <FlowPane.margin>
-                              <Insets right="20.0" />
-                           </FlowPane.margin>
-                        </VBox>
-                        <VBox prefHeight="200.0" prefWidth="100.0">
-                           <children>
-                              <ImageView fx:id="imgThor1" fitHeight="136.0" fitWidth="178.0" pickOnBounds="true" preserveRatio="true" />
-                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="49.0" prefWidth="190.0" text="Thor" />
-                           </children>
-                           <FlowPane.margin>
-                              <Insets right="20.0" />
+                              <Insets left="20.0" />
                            </FlowPane.margin>
                         </VBox>
                      </children>
@@ -139,13 +124,20 @@
                </content>
             </ScrollPane>
          </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
       </HBox>
    </center>
    <bottom>
-      <Button mnemonicParsing="false" onAction="#switchToResultado6" text="Terminar" BorderPane.alignment="CENTER" style="-fx-border-color: #01037B; -fx-border-radius: 6; -fx-border-insets: -1; -fx-border-width: 3; -fx-background-color: #2DA3F9; -fx-text-fill: #01037B #01037B; -fx-font-style: italic;">
+      <HBox alignment="BOTTOM_CENTER" prefHeight="9.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <BorderPane.margin>
-            <Insets bottom="20.0" top="20.0" />
+            <Insets bottom="20.0" />
          </BorderPane.margin>
-      </Button>
+         <children>
+            <Button mnemonicParsing="false" onAction="#switchToComprobacion" style="-fx-border-color: #01037B; -fx-border-radius: 6; -fx-border-insets: -1; -fx-border-width: 3; -fx-background-color: #2DA3F9; -fx-text-fill: #01037B #01037B; -fx-font-style: italic;" text="Terminar" />
+         </children>
+      </HBox>
    </bottom>
 </BorderPane>
+
