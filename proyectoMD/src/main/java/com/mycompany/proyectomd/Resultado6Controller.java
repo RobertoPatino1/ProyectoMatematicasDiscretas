@@ -47,8 +47,8 @@ public class Resultado6Controller implements Initializable {
         
     }
     private void llenarCampos(){
-        cargarImagen("thanos.jpg");
-        lbl1.setText("\"Muy bien hecho!\nAhora que conozco las alturas de cada villano puedo saber\ncomo ordenarlos de manera efectiva. \nEsta relación se conoce como relación:");
+        cargarImagen("venom.jpg");
+        lbl1.setText("\"Buen trabajo amigo!\nAhora que conozco las alturas de cada villano puedo saber\ncomo ordenarlos de manera efectiva. \nEsta relación se conoce como relación:");
         
         lbl2.setText("ANTISIMETRICA");
         

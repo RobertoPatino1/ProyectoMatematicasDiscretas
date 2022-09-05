@@ -45,8 +45,9 @@ public class Resultado5Controller implements Initializable {
     }    
 
     @FXML
-    private void switchToNivel6(ActionEvent event) {
+    private void switchToNivel6(ActionEvent event) throws IOException {
         //Se cambia a la ventana del nivel 6
+        App.setRoot("cinematica6");
     }
     
     private void llenarCampos(){

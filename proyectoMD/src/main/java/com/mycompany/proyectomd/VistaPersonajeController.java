@@ -103,6 +103,16 @@ public class VistaPersonajeController implements Initializable {
             lblEstatura.setText("2.62 metros");
         }else if(personaje.getNombrePersonaje().equalsIgnoreCase("gorr")){
             lblEstatura.setText("1.60 metros");
+        }else if(personaje.getNombrePersonaje().equalsIgnoreCase("batman")){
+            lblEstatura.setText("1.88 metros");
+        }else if(personaje.getNombrePersonaje().equalsIgnoreCase("super-man")){
+            lblEstatura.setText("1.91 metros");
+        }else if(personaje.getNombrePersonaje().equalsIgnoreCase("spider-Man")){
+            lblEstatura.setText("1.70 metros");
+        }else if(personaje.getNombrePersonaje().equalsIgnoreCase("iron-man")){
+            lblEstatura.setText("1.74 metros");
+        }else if(personaje.getNombrePersonaje().equalsIgnoreCase("thor")){
+            lblEstatura.setText("1.90 metros");
         }else{
             estatura.setVisible(false);
             lblEstatura.setVisible(false);
