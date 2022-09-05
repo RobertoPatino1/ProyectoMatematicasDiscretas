@@ -148,6 +148,10 @@ public class Nivel5Controller implements Initializable {
             VistaPersonajeController.personaje = Lector.generarTarjetas().get(7);
             cambiarDeVentana();
         });
+        imgGorr2.setOnMouseClicked(eh->{
+            VistaPersonajeController.personaje = Lector.generarTarjetas().get(11);
+            cambiarDeVentana();
+        });
     }
     
     

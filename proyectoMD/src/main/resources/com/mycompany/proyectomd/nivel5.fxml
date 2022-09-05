@@ -30,7 +30,7 @@
                         <VBox prefHeight="200.0" prefWidth="100.0">
                            <children>
                               <ImageView fx:id="imgDuende1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
-                              <Label text="Duende verde es más alto que:" />
+                              <Label prefHeight="17.0" prefWidth="205.0" text="Duende es más alto que:" />
                               <TextField fx:id="txtDuende" />
                            </children>
                         </VBox>
