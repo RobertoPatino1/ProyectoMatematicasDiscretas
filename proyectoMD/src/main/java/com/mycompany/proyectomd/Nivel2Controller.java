@@ -231,4 +231,11 @@ public class Nivel2Controller implements Initializable {
         resultado=r1+r2+r3;
         return resultado;
     }
+    
+       private int comprobarResultados() {
+        int resultado=0;
+        resultado = comprobarIronman(txtIronman1.getText())+
+                comprobarSuperman(txtSuperman1.getText())+comprobarSpiderman(txtSpiderman1.getText())+comprobarThor(txtThor1.getText());
+        return resultado;
+    }
 }
