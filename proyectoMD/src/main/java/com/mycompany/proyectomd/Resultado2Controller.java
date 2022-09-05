@@ -36,12 +36,15 @@ public class Resultado2Controller implements Initializable {
     private Label lbl2;
     @FXML
     private Label lbl3;
+    @FXML
+    private Label lblTotalPuntos;
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         llenarCampos();
+        lblTotalPuntos.setText("Obtuviste "+totalPuntos+" puntos de un total de 10");
     }    
     
     @FXML
