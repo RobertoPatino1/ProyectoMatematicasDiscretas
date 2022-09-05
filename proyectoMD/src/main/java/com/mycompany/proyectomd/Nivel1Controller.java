@@ -131,7 +131,7 @@ public class Nivel1Controller implements Initializable {
         String[] respuestas =entrada.trim().split(",");
         int r1=0;
         for(String respuesta:respuestas){
-            if(respuesta.trim().toUpperCase().equals("LEX LUTHOR") || respuesta.trim().toUpperCase()=="LEXLUTHOR"){
+            if(respuesta.trim().toUpperCase().equals("LEX LUTHOR") || respuesta.trim().toUpperCase().equals("LEXLUTHOR")){
                 r1=1;
             }
         }  
