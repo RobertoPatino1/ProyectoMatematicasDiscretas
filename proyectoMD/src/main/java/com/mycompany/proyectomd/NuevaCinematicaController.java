@@ -26,9 +26,6 @@ import javafx.scene.layout.BorderPane;
 public class NuevaCinematicaController implements Initializable {
 
 
-    @FXML
-    private BorderPane root;
-    @FXML
     private Label lblTituloNivel;
     @FXML
     private Button btnJugar;
@@ -52,7 +49,7 @@ public class NuevaCinematicaController implements Initializable {
     
     private void llenarCampos(){
         cargarImagen("spiderman.jpg");
-        lblTituloNivel.setText("Spider-Man necesita tu ayuda!");
+        //lblTituloNivel.setText("Spider-Man necesita tu ayuda!");
         lblTextoCinematica.setText("\"Hola compañero, necesito tu ayuda para un reportaje.\nVerás, necesito investigar que heroes tienen poderes en común, como por ejemplo:\nSaber qué superhéroes pueden trepar muros como yo.\nEste trabajo me sería util para poder apoyar a mis otros compañeros.\nCuento contigo amigo!\"");
     }
     
