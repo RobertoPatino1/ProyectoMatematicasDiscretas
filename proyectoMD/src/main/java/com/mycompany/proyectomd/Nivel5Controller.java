@@ -91,8 +91,6 @@ public class Nivel5Controller implements Initializable {
         cargarImagen("mrfreeze.jpg", imgMrFreeze2);
         cargarImagen("thanos.jpg", imgThanos1);
         cargarImagen("thanos.jpg", imgThanos2);
-
-
     }
     
     
@@ -148,5 +146,113 @@ public class Nivel5Controller implements Initializable {
             VistaPersonajeController.personaje = Lector.generarTarjetas().get(7);
             cambiarDeVentana();
         });
+    }
+    
+    
+    
+    private int comprobarSpiderman(String entrada){
+        String[] respuestas =entrada.split(",");
+        int resultado=0;
+        int r1=0;
+        int r2=0;
+        int r3 = 0;
+        int r4=0;
+        int r5=0;
+        for(String respuesta:respuestas){
+            if(respuesta.trim().toUpperCase().equals("SPIDERMAN") || respuesta.trim().toUpperCase().equals("SPIDER MAN") || respuesta.trim().toUpperCase().equals("SPIDER-MAN")){
+                r1=1;
+            }
+            if(respuesta.trim().toUpperCase().equals("SUPERMAN")){
+                r2=1;
+            }
+            if(respuesta.trim().toUpperCase().equals("THOR")){
+                r3=1;
+            }
+            if(respuesta.trim().toUpperCase().equals("IRONMAN") || respuesta.trim().toUpperCase().equals("IRON-MAN")){
+                r4=1;
+            }
+            if(respuesta.trim().toUpperCase().equals("BATMAN") || respuesta.trim().toUpperCase().equals("BAT-MAN")){
+                r5=1;
+            }
+        }  
+        resultado=r1+r2+r3+r4+r5;
+        return resultado;
+    }
+   
+   
+   private int comprobarIronman(String entrada){
+        String[] respuestas =entrada.split(",");
+        int resultado=0;
+        int r1=0;
+        int r2=0;
+        int r3 = 0;
+        int r4=0;
+        for(String respuesta:respuestas){
+            if(respuesta.trim().toUpperCase().equals("SUPERMAN")){
+                r1=1;
+            }
+            if(respuesta.trim().toUpperCase().equals("THOR")){
+                r2=1;
+            }
+            if(respuesta.trim().toUpperCase().equals("IRONMAN") || respuesta.trim().toUpperCase().equals("IRON-MAN")){
+                r3=1;
+            }
+            if(respuesta.trim().toUpperCase().equals("BATMAN") || respuesta.trim().toUpperCase().equals("BAT-MAN")){
+                r4=1;
+            }
+        }  
+        resultado=r1+r2+r3+r4;
+        return resultado;
+    }
+    
+   
+   private int comprobarBatman(String entrada){
+        String[] respuestas =entrada.split(",");
+        int resultado=0;
+        int r1=0;
+        int r2=0;
+        int r3 = 0;
+        for(String respuesta:respuestas){
+            if(respuesta.trim().toUpperCase().equals("SUPERMAN")){
+                r1=1;
+            }
+            if(respuesta.trim().toUpperCase().equals("THOR")){
+                r2=1;
+            }
+            if(respuesta.trim().toUpperCase().equals("BATMAN") || respuesta.trim().toUpperCase().equals("BAT-MAN")){
+                r3=1;
+            }
+        }  
+        resultado=r1+r2+r3;
+        return resultado;
+    }
+   private int comprobarThor(String entrada){
+        String[] respuestas =entrada.split(",");
+        int resultado=0;
+        int r1=0;
+        int r2=0;
+        for(String respuesta:respuestas){
+            if(respuesta.trim().toUpperCase().equals("SUPERMAN")){
+                r1=1;
+            }
+            if(respuesta.trim().toUpperCase().equals("THOR")){
+                r2=1;
+            }
+        }  
+        resultado=r1+r2;
+        return resultado;
+    }
+   
+   private int comprobarSuperman(String entrada){
+        String[] respuestas =entrada.split(",");
+        int resultado=0;
+        int r1=0;
+        for(String respuesta:respuestas){
+            if(respuesta.trim().toUpperCase().equals("SUPERMAN")){
+                r1=1;
+            }
+        }  
+        resultado=r1;
+        return resultado;
     }
 }

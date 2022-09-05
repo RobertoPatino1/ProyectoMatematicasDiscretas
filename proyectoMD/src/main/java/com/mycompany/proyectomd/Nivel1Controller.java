@@ -102,9 +102,9 @@ public class Nivel1Controller implements Initializable {
 
     @FXML
     private void comprobarResultados(ActionEvent event) throws IOException {
-//        System.out.println(comprobarResultadosBatman(entrada));
-//        System.out.println(comprobarResultadosSuperman(entrada));
 
+        Resultado1Controller.totalPuntos = comprobarResultadosHeroes();
+        System.out.println("RESULTADO NIVEL 1: "+comprobarResultadosHeroes());
         App.setRoot("resultado1");
         
     }
@@ -119,7 +119,7 @@ public class Nivel1Controller implements Initializable {
 
                 r1 = 1;
             }
-            if(respuesta.trim().toUpperCase().equals("MR.FREEZE") || respuesta.trim().toUpperCase().equals("MR. FREEZE")){
+            if(respuesta.trim().toUpperCase().equals("MR.FREEZE") || respuesta.trim().toUpperCase().equals("MR. FREEZE")||respuesta.trim().toUpperCase().equals("MR FREEZE")){
                 r2=1;
             }
         }  
@@ -129,7 +129,6 @@ public class Nivel1Controller implements Initializable {
     
     private int comprobarResultadosSuperman(String entrada){
         String[] respuestas =entrada.trim().split(",");
-        boolean resultado=false;
         int r1=0;
         for(String respuesta:respuestas){
             if(respuesta.trim().toUpperCase().equals("LEX LUTHOR") || respuesta.trim().toUpperCase()=="LEXLUTHOR"){
@@ -148,13 +147,13 @@ public class Nivel1Controller implements Initializable {
         int r2=0;
         int r3 = 0;
         for(String respuesta:respuestas){
-            if(respuesta.trim().toUpperCase()=="VENOM"){
+            if(respuesta.trim().toUpperCase().equals("VENOM")){
                 r1=1;
             }
-            if(respuesta.trim().toUpperCase()=="THANOS"){
+            if(respuesta.trim().toUpperCase().equals("THANOS")){
                 r2=1;
             }
-            if(respuesta.trim().toUpperCase()=="DUENDE VERDE"|| respuesta.trim().toUpperCase()=="DUENDEVERDE"){
+            if(respuesta.trim().toUpperCase().equals("DUENDE VERDE")|| respuesta.trim().toUpperCase().equals("DUENDEVERDE")){
                 r3=1;
             }
         }  
@@ -168,10 +167,10 @@ public class Nivel1Controller implements Initializable {
         int r1=0;
         int r2=0;
         for(String respuesta:respuestas){
-            if(respuesta.trim().toUpperCase()=="THANOS"){
+            if(respuesta.trim().toUpperCase().equals("THANOS")){
                 r1=1;
             }
-            if(respuesta.trim().toUpperCase()=="LOKI"){
+            if(respuesta.trim().toUpperCase().equals("LOKI")){
                 r2=1;
             }
         }  
@@ -182,14 +181,14 @@ public class Nivel1Controller implements Initializable {
     
     private int comprobarResultadosThor(String entrada){
         String[] respuestas =entrada.trim().split(",");
-        boolean resultado=false;
+
         int r1=0;
         int r2=0;
         for(String respuesta:respuestas){
-            if(respuesta.trim().toUpperCase()=="THANOS"){
+            if(respuesta.trim().toUpperCase().equals("THANOS")){
                 r1=1;
             }
-            if(respuesta.trim().toUpperCase()=="GORR"){
+            if(respuesta.trim().toUpperCase().equals("GORR")){
                 r2=1;
             }
         }
@@ -286,23 +285,10 @@ public class Nivel1Controller implements Initializable {
 
     
     
-    private int comprobarResultadosHeroes(String heroe,String entrada) {
+    private int comprobarResultadosHeroes() {
         int resultado=0;
-        if(heroe.equals("Batman")){
-            resultado=comprobarResultadosBatman(entrada);
-        }
-        if(heroe.equals("Spiderman")){
-            resultado=comprobarSpiderman(entrada);
-        }
-        if(heroe.equals("Ironman")){
-            resultado=comprobarIronman(entrada);
-        }
-        if(heroe.equals("Thor")){
-            resultado=comprobarResultadosThor(entrada);
-        }
-        if(heroe.equals("Superman")){
-            resultado=comprobarResultadosSuperman(entrada);
-        }
+        resultado = comprobarIronman(txtIronman.getText())+comprobarResultadosBatman(txtBatman.getText())+
+                comprobarResultadosSuperman(txtSuperman.getText())+comprobarSpiderman(txtSpiderman.getText())+comprobarResultadosThor(txtThor.getText());
         return resultado;
     }
 
