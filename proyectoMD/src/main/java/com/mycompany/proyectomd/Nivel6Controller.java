@@ -149,7 +149,7 @@ public class Nivel6Controller implements Initializable {
     }
     
     
-private int comprobarSpiderman(String entrada){
+    private int comprobarSpiderman(String entrada){
         String[] respuestas =entrada.split(",");
         int resultado=0;
         int r1=0;

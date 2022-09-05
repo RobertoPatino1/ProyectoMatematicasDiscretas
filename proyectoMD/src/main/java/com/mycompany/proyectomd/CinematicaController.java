@@ -18,6 +18,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.text.Font;
 /**
  * FXML Controller class
  *
@@ -54,7 +55,9 @@ public class CinematicaController implements Initializable {
     
     private void llenarCampos(){
         cargarImagen("batman.jpg");
+        lblTituloNivel.setFont(new Font(30));
         lblTituloNivel.setText("Batman necesita tu ayuda!");
+        
         lblTextoCinematica.setText("\"Hola amigo, para mi siguiente misión necesito tu ayuda.\nDebo "
                 + " encontrar los enemigos de todos los superheroes que te\n mostraré en pantalla.\n"
                 + " Cuento contigo!\"");
