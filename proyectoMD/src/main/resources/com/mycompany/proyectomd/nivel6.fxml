@@ -12,18 +12,18 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="588.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectomd.Nivel6Controller">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="588.0" style="-fx-background-color: #9BF0F9; -fx-border-color: #01037B #01037B; -fx-border-width: 4; -fx-border-radius: 11;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectomd.Nivel6Controller">
    <top>
-      <Label text="Relaciona a los personajes por su altura!" BorderPane.alignment="CENTER">
+      <Label text="Relaciona a los personajes por su altura!" BorderPane.alignment="CENTER" style="-fx-text-fill: #01037B #01037B #01037B #01037B;">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
    </top>
    <center>
-      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <ScrollPane hbarPolicy="NEVER" prefHeight="299.0" prefWidth="327.0">
+            <ScrollPane hbarPolicy="NEVER" prefHeight="383.0" prefWidth="293.0" style="-fx-background-color: #9BF0F9; -fx-border-color: #01037B #01037B; -fx-border-width: 2; -fx-border-radius: 11;">
                <content>
                   <FlowPane alignment="CENTER" prefHeight="381.0" prefWidth="291.0">
                      <children>
@@ -81,7 +81,7 @@
                   </FlowPane>
                </content>
             </ScrollPane>
-            <ScrollPane hbarPolicy="NEVER" prefHeight="299.0" prefWidth="319.0">
+            <ScrollPane hbarPolicy="NEVER" prefHeight="383.0" prefWidth="308.0" style="-fx-background-color: #9BF0F9; -fx-border-color: #01037B #01037B; -fx-border-width: 2; -fx-border-radius: 11;">
                <content>
                   <FlowPane prefHeight="383.0" prefWidth="305.0">
                      <children>
@@ -142,7 +142,7 @@
       </HBox>
    </center>
    <bottom>
-      <Button mnemonicParsing="false" onAction="#switchToResultado6" text="Terminar" BorderPane.alignment="CENTER">
+      <Button mnemonicParsing="false" onAction="#switchToResultado6" text="Terminar" BorderPane.alignment="CENTER" style="-fx-border-color: #01037B; -fx-border-radius: 6; -fx-border-insets: -1; -fx-border-width: 3; -fx-background-color: #2DA3F9; -fx-text-fill: #01037B #01037B; -fx-font-style: italic;">
          <BorderPane.margin>
             <Insets bottom="20.0" top="20.0" />
          </BorderPane.margin>
