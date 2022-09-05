@@ -54,12 +54,12 @@ public class Resultado6Controller implements Initializable {
 
     private void llenarCampos(){
         cargarImagen("venom.jpg");
-        lbl1.setText("\"Esta relación cumple las propiedades para ser reflexiva,ya que por ejemplo:\n spiderman mide lo mismo que spiderman\n" +
-",transitiva, porque si spiderman es mas bajo que ironman y ironman  es mas bajo que thor\n entonces spiderman es mas bajo que ironman y finalmente antisimetrica, porque\n" +
-"nunca se dará el caso en el que superman sea mas bajo que batman \npero siempre se dará que batman sea mas bajo que superman.\n" +
-"Cuando una relación cumple con estas 3 propiedades se la conoce como: relacion de orden");
+        lbl1.setText("\"Esta relación cumple las propiedades para ser reflexiva,ya que por ejemplo:\n Spiderman mide lo mismo que spiderman" +
+",transitiva, porque si Spiderman \nes más bajo que Ironman y Ironman  es más bajo que Thor\n entonces spiderman es más bajo que Ironman y finalmente antisimétrica, porque\n" +
+"nunca se dará el caso en el que Superman sea más bajo que Batman \npero siempre se dará que Batman sea más bajo que Superman.\n" +
+"Cuando una relación cumple con estas 3 propiedades se la conoce como:");
         
-        lbl2.setText("RELACION DE ORDEN");
+        lbl2.setText("RELACIÓN DE ORDEN");
         
         lbl3.setText("\nMuchas gracias por tu ayuda. \"");
     }

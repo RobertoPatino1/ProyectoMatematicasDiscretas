@@ -59,7 +59,7 @@ public class CinematicaController implements Initializable {
         lblTituloNivel.setText("Batman necesita tu ayuda!");
         
         lblTextoCinematica.setText("\"Hola amigo, para mi siguiente misión necesito tu ayuda.\nDebo "
-                + " encontrar los enemigos de todos los superheroes que te\n mostraré en pantalla.\n"
+                + " encontrar los enemigos de todos los superhéroes que te\n mostraré en pantalla.\n"
                 + " Cuento contigo!\"");
     }
     

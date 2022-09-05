@@ -47,7 +47,7 @@ public class Cinematica5Controller implements Initializable {
     
     private void llenarCampos(){
         cargarImagen("thanos.jpg");
-        lblTextoCinematica.setText("\"Terricola.\nRequiero de tu ayuda para una tarea importante.\nTu trabajo consistirá en relacionar a estos personajes que te mostraré\npor su altura. Debo conocer que personaje es mas alto que otros personajes.\nSi consigues completar esta tarea te recompensaré personalmente.\nCuento contigo!\"");
+        lblTextoCinematica.setText("\"Terricola, requiero de tu ayuda para una tarea importante.\nTu trabajo consistirá en relacionar a estos personajes que te mostraré\npor su altura. Debo conocer que personaje es más alto que otros personajes.\nSi consigues completar esta tarea te recompensaré personalmente.\nCuento contigo!\"");
     }
     
     

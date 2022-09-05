@@ -54,7 +54,7 @@ public class Resultado2Controller implements Initializable {
     
     private void llenarCampos(){
         cargarImagen("spiderman.jpg");
-        lbl1.setText("\"Muchas gracias compañero. Esta información me ayudará mucho.\nAlgo curioso es que la relación se puede aplicar entre los heroes mismos.\nUn spiderman puede trepar muros así como otro spiderman del multiverso!\nEste tipo de relacion se conoce como:");
+        lbl1.setText("\"Muchas gracias compañero. Esta información me ayudará mucho.\nAlgo curioso es que la relación se puede aplicar entre los héroes mismos.\nUn spiderman puede trepar muros así como otro spiderman del multiverso!\nEste tipo de relación se conoce como:");
         
         lbl2.setText("REFLEXIVA");
         

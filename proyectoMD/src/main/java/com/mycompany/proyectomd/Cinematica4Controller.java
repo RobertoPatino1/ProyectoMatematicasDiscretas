@@ -47,7 +47,7 @@ public class Cinematica4Controller implements Initializable {
     }
     private void llenarCampos(){
         cargarImagen("thor.jpg");
-        lblTextoCinematica.setText("\"Hola humano!\nDeseo que me ayudes con algo.\nVerás, debo saber como puedo relacionar a estos personajes por su color de pelo\nPor ejemplo: Qué vengadores tienen el mismo color de cabello?\nComo sabrás mi cabello es único e increible, pero debo conocer\ncomo puedo relacionar los cabellos de los demás.\nThor el dios del trueno cuenta contigo!\"");
+        lblTextoCinematica.setText("\"Hola humano!\nDeseo que me ayudes con algo.\nVerás, debo saber como puedo relacionar a estos personajes por su color de cabello\nPor ejemplo: Qué vengadores tienen el mismo color de cabello?\nComo sabrás mi cabello es único e increíble, pero debo conocer\ncomo puedo relacionar los cabellos de los demás.\nThor el dios del trueno cuenta contigo!\"");
     }
     
     

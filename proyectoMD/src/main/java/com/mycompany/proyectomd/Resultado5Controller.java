@@ -58,9 +58,9 @@ public class Resultado5Controller implements Initializable {
         cargarImagen("thanos.jpg");
         lbl1.setText("\"Muy bien hecho!\nAhora que conozco las alturas de cada villano puedo saber\ncomo ordenarlos de manera efectiva. \nEsta relación se conoce como relación:");
         
-        lbl2.setText("ANTISIMETRICA");
+        lbl2.setText("ANTISIMÉTRICA");
         
-        lbl3.setText("\nLa relacion es antisimetrica ya que puedes decir que yo soy mas alto que el guason, pero\nel guason nunca será mas alto que yo.Gracias a ti puedo decir que las alturas son\nperfectamente equilibradas.Como todo deberia ser\"");
+        lbl3.setText("\nLa relación es antisimétrica ya que puedes decir que yo soy más alto que el Guasón, pero\nel Guasón nunca será mas alto que yo. Gracias a ti puedo decir que las alturas son\nperfectamente equilibradas. Como todo deberia ser\"");
     }
     
     
