@@ -54,8 +54,9 @@ public class Nivel3Controller implements Initializable {
     private void switchToResultados3(ActionEvent event) throws IOException {
         App.setRoot("resultado3");
         
-        System.out.println(comprobarH1(txtHeroe3.getText()));
-        System.out.println(comprobarH2(txtHeroe4.getText()));
+        System.out.println("PUNTOS: "+comprobarRespuestas());
+        
+        Resultado3Controller.totalPuntos = comprobarRespuestas();
     }
     
     
@@ -142,6 +143,12 @@ public class Nivel3Controller implements Initializable {
             }
         resultado=r1;
         return resultado;
+    }
+    
+    
+    
+    private int comprobarRespuestas(){
+        return comprobarH1(txtHeroe3.getText())+comprobarH2(txtHeroe4.getText());
     }
     
     
