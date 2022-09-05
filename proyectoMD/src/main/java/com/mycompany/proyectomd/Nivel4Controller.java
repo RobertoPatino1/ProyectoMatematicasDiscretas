@@ -70,8 +70,12 @@ public class Nivel4Controller implements Initializable {
     }    
 
     @FXML
-    private void switchToResultados4(ActionEvent event) throws IOException {
+    private void switchToResultados3(ActionEvent event) throws IOException {
         App.setRoot("resultado4");
+        
+        System.out.println("PUNTOS: "+comprobarResultados());
+        
+        Resultado3Controller.totalPuntos = comprobarResultados();
     }
     
     

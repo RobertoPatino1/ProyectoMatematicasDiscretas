@@ -72,6 +72,14 @@ public class Nivel2Controller implements Initializable {
         App.setRoot("resultado2");
     }
     
+    private void switchToResultados3(ActionEvent event) throws IOException {
+        App.setRoot("resultado3");
+        
+        System.out.println("PUNTOS: "+comprobarResultados2());
+        
+        Resultado3Controller.totalPuntos = comprobarResultados2();
+    }
+    
     
     
     private void llenarCampos(){
@@ -232,7 +240,7 @@ public class Nivel2Controller implements Initializable {
         return resultado;
     }
     
-       private int comprobarResultados() {
+       private int comprobarResultados2() {
         int resultado=0;
         resultado = comprobarIronman(txtIronman1.getText())+
                 comprobarSuperman(txtSuperman1.getText())+comprobarSpiderman(txtSpiderman1.getText())+comprobarThor(txtThor1.getText());
