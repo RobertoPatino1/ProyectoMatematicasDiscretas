@@ -21,9 +21,9 @@
       </Label>
    </top>
    <center>
-      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <ScrollPane hbarPolicy="NEVER" prefHeight="383.0" prefWidth="293.0">
+            <ScrollPane hbarPolicy="NEVER" prefHeight="299.0" prefWidth="327.0">
                <content>
                   <FlowPane alignment="CENTER" prefHeight="381.0" prefWidth="291.0">
                      <children>
@@ -81,7 +81,7 @@
                   </FlowPane>
                </content>
             </ScrollPane>
-            <ScrollPane hbarPolicy="NEVER" prefHeight="383.0" prefWidth="308.0">
+            <ScrollPane hbarPolicy="NEVER" prefHeight="299.0" prefWidth="319.0">
                <content>
                   <FlowPane prefHeight="383.0" prefWidth="305.0">
                      <children>
