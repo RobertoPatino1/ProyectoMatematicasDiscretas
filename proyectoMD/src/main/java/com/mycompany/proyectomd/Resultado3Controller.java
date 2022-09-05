@@ -23,7 +23,7 @@ import javafx.scene.image.ImageView;
  * @author Det-Pc
  */
 public class Resultado3Controller implements Initializable {
-
+    public static int totalPuntos;
     @FXML
     private Label lbl1;
     @FXML

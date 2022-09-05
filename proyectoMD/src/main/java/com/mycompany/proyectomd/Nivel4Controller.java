@@ -146,4 +146,115 @@ public class Nivel4Controller implements Initializable {
         });
     }
     
+    
+   private int comprobarThanos(String entrada){
+        String[] respuestas =entrada.split(",");
+        int resultado=0;
+        int r1=0;
+        int r2=0;
+        int r3 = 0;
+        int r4=0;
+        int r5=0;
+        for(String respuesta:respuestas){
+            if(respuesta.trim().toUpperCase().equals("LEXLUTHOR") || respuesta.trim().toUpperCase().equals("LEX LUTHOR")){
+                r2=1;
+            }
+            if(respuesta.trim().toUpperCase().equals("DUENDE VERDE")|| respuesta.trim().toUpperCase().equals("DUENDEVERDE")){
+                r3=1;
+            }
+            if(respuesta.trim().toUpperCase().equals("GUASON")){
+                r4=1;
+            }
+            if(respuesta.trim().toUpperCase().equals("GORR")){
+                r5=1;
+            }
+            if(respuesta.trim().toUpperCase().equals("MR.FREEZE") || respuesta.trim().toUpperCase().equals("MR. FREEZE")){
+                r1=1;
+            }
+        }  
+        resultado=r1+r2+r3+r4+r5;
+        return resultado;
+    }
+   
+   
+   private int comprobarLexLuthor(String entrada){
+        String[] respuestas =entrada.split(",");
+        int resultado=0;
+        int r1=0;
+        int r2=0;
+        int r3 = 0;
+        int r4=0;
+        int r5=0;
+        for(String respuesta:respuestas){
+            if(respuesta.trim().toUpperCase().equals("DUENDE VERDE")|| respuesta.trim().toUpperCase().equals("DUENDEVERDE")){
+                r3=1;
+            }
+            if(respuesta.trim().toUpperCase().equals("GUASON")){
+                r4=1;
+            }
+            if(respuesta.trim().toUpperCase().equals("GORR")){
+                r5=1;
+            }
+            if(respuesta.trim().toUpperCase().equals("MR.FREEZE") || respuesta.trim().toUpperCase().equals("MR. FREEZE")){
+                r1=1;
+            }
+        }  
+        resultado=r1+r3+r4+r5;
+        return resultado;
+    }
+   
+   private int comprobarMrfreeze(String entrada){
+        String[] respuestas =entrada.split(",");
+        int resultado=0;
+        int r3 = 0;
+        int r4=0;
+        int r5=0;
+        for(String respuesta:respuestas){
+            if(respuesta.trim().toUpperCase().equals("DUENDE VERDE")|| respuesta.trim().toUpperCase().equals("DUENDEVERDE")){
+                r3=1;
+            }
+            if(respuesta.trim().toUpperCase().equals("GUASON")){
+                r4=1;
+            }
+            if(respuesta.trim().toUpperCase().equals("GORR")){
+                r5=1;
+            }  
+        }  
+        resultado=r3+r4+r5;
+        return resultado;
+    }
+   
+   private int comprobarGuason(String entrada){
+        String[] respuestas =entrada.split(",");
+        int resultado=0;
+        int r1=0;
+        int r2 = 0;
+        for(String respuesta:respuestas){
+            if(respuesta.trim().toUpperCase().equals("DUENDE VERDE")|| respuesta.trim().toUpperCase().equals("DUENDEVERDE")){
+                r1=1;
+            }
+            if(respuesta.trim().toUpperCase().equals("GORR")){
+                r2=1;
+            }  
+        }  
+        resultado=r1+r2;
+        return resultado;
+    }
+   
+   private int comprobarDuendeverde(String entrada){
+        String[] respuestas =entrada.split(",");
+        int resultado=0;
+        int r1=0;
+        for(String respuesta:respuestas){
+            if(respuesta.trim().toUpperCase().equals("GORR")){
+                r1=1;
+            }  
+        }  
+        resultado=r1;
+        return resultado;
+    }
+   
+   
+    
+
 }

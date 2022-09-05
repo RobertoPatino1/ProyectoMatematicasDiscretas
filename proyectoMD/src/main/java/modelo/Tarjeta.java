@@ -10,6 +10,7 @@ public class Tarjeta {
     private String nombrePersonaje;
     private String nombre;
     private int edad;
+    private int altura;
     private LinkedList<Tarjeta> enemigos;
     private LinkedList<Tarjeta> amigos;
     private String colorCabello;
@@ -40,6 +41,20 @@ public class Tarjeta {
         this.nombrePersonaje = nombrePersonaje;
         this.nombre = nombre;
         this.edad = edad;
+        this.enemigos = enemigos;
+        this.amigos = amigos;
+        this.colorCabello = colorCabello;
+        this.poderes = poderes;
+        this.ciudad = ciudad;
+        this.colorDeOjos = colorDeOjos;
+        this.gustos = gustos;
+    }
+    
+        public Tarjeta(String nombrePersonaje, String nombre, int edad,int altura, LinkedList<Tarjeta> enemigos, LinkedList<Tarjeta> amigos, String colorCabello, LinkedList<String> poderes, String ciudad, String colorDeOjos, LinkedList<String> gustos) {
+        this.nombrePersonaje = nombrePersonaje;
+        this.nombre = nombre;
+        this.edad = edad;
+        this.altura=altura;
         this.enemigos = enemigos;
         this.amigos = amigos;
         this.colorCabello = colorCabello;

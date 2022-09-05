@@ -27,7 +27,7 @@ import javafx.scene.image.ImageView;
  */
 public class Resultado5Controller implements Initializable {
 
-
+    public static int totalPuntos;
     @FXML
     private ImageView img;
     @FXML
