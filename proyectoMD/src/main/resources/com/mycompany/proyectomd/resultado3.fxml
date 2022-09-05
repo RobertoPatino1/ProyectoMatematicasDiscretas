@@ -10,7 +10,7 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #9BF0F9; -fx-border-color: #01037B #01037B; -fx-border-width: 4; -fx-border-radius: 11;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectomd.Resultado3Controller">
    <top>
-      <Label text="Resultados:" BorderPane.alignment="CENTER" style="-fx-text-fill: #01037B #01037B #01037B #01037B;">
+      <Label style="-fx-text-fill: #01037B #01037B #01037B #01037B;" text="Resultados:" BorderPane.alignment="CENTER">
          <font>
             <Font size="30.0" />
          </font>
@@ -19,23 +19,22 @@
    <center>
       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
          <children>
-            <Label fx:id="lblTotalPuntos" text="Label" style="-fx-text-fill: #01037B #01037B #01037B #01037B;">
+            <Label fx:id="lbT" text="Label" style="-fx-text-fill: #01037B #01037B #01037B #01037B;">
                <font>
                   <Font size="15.0" />
-               </font>
-            </Label>
+               </font></Label>
             <ImageView fx:id="img" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
-            <Label fx:id="lbl1" alignment="CENTER" contentDisplay="CENTER" text="Label" style="-fx-text-fill: #01037B #01037B #01037B #01037B;">
+            <Label fx:id="lbl1" alignment="CENTER" contentDisplay="CENTER" style="-fx-text-fill: #01037B #01037B #01037B #01037B;" text="Label">
                <font>
                   <Font size="17.0" />
                </font>
             </Label>
-            <Label fx:id="lbl2" alignment="CENTER" contentDisplay="CENTER" text="Label" style="-fx-text-fill: #01037B #01037B #01037B #01037B;">
+            <Label fx:id="lbl2" alignment="CENTER" contentDisplay="CENTER" style="-fx-text-fill: #01037B #01037B #01037B #01037B;" text="Label">
                <font>
                   <Font name="System Bold Italic" size="17.0" />
                </font>
             </Label>
-            <Label fx:id="lbl3" alignment="CENTER" contentDisplay="CENTER" text="Label" style="-fx-text-fill: #01037B #01037B #01037B #01037B;">
+            <Label fx:id="lbl3" alignment="CENTER" contentDisplay="CENTER" style="-fx-text-fill: #01037B #01037B #01037B #01037B;" text="Label">
                <font>
                   <Font size="17.0" />
                </font>
@@ -44,7 +43,7 @@
       </VBox>
    </center>
    <bottom>
-      <Button mnemonicParsing="false" onAction="#switchToCinematica4" text="Siguiente nivel!" BorderPane.alignment="CENTER" style="-fx-border-color: #01037B; -fx-border-radius: 6; -fx-border-insets: -1; -fx-border-width: 3; -fx-background-color: #2DA3F9; -fx-text-fill: #01037B #01037B; -fx-font-style: italic;">
+      <Button mnemonicParsing="false" onAction="#switchToCinematica4" style="-fx-border-color: #01037B; -fx-border-radius: 6; -fx-border-insets: -1; -fx-border-width: 3; -fx-background-color: #2DA3F9; -fx-text-fill: #01037B #01037B; -fx-font-style: italic;" text="Siguiente nivel!" BorderPane.alignment="CENTER">
          <font>
             <Font size="19.0" />
          </font>

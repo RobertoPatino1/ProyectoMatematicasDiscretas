@@ -33,16 +33,21 @@ public class Resultado3Controller implements Initializable {
     private Label lbl3;
     @FXML
     private ImageView img;
-    @FXML
     private Label lblTotalPuntos;
+    @FXML
+    private Label lbT;
+    public static String texto;
 
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        System.out.println("--->"+totalPuntos);
+        lbT.setText("Obtuviste "+App.total+" puntos de un total de 6");
+//lbT.setText(texto);
         llenarCampos();
-        lblTotalPuntos.setText("Obtuviste "+totalPuntos+" puntos de un total de 3");
+
     }    
     
     @FXML

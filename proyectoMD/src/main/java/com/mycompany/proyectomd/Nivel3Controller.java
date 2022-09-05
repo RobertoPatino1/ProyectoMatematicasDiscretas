@@ -41,6 +41,7 @@ public class Nivel3Controller implements Initializable {
     private ImageView imgThor;
     @FXML
     private ImageView imgIronman;
+    public static int puntaje;
     /**
      * Initializes the controller class.
      */
@@ -52,11 +53,18 @@ public class Nivel3Controller implements Initializable {
 
     @FXML
     private void switchToResultados3(ActionEvent event) throws IOException {
-        App.setRoot("resultado3");
+        
         
         System.out.println("PUNTOS: "+comprobarRespuestas());
-        
-        Resultado3Controller.totalPuntos = comprobarRespuestas();
+        int r1 = comprobarRespuestas();
+        Resultado3Controller.totalPuntos =r1;
+        puntaje = comprobarRespuestas();
+        System.out.println(Resultado3Controller.totalPuntos);
+        System.out.println("TOTAL: "+puntaje);
+        App.total = comprobarRespuestas();
+        System.out.println("TOTAL2: "+App.total);
+        Resultado3Controller.texto = "Obtuviste "+comprobarRespuestas()+" puntos de un total de 3";
+        App.setRoot("resultado3");
     }
     
     

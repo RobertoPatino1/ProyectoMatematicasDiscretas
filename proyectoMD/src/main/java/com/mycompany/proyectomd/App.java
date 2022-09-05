@@ -16,6 +16,7 @@ import javafx.scene.image.Image;
 public class App extends Application {
 
     private static Scene scene;
+    public static int total;
     public final static String pathImg = "archivos/";
     @Override
     public void start(Stage stage) throws IOException {
