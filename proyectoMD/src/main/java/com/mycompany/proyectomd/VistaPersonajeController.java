@@ -34,20 +34,21 @@ public class VistaPersonajeController implements Initializable {
     private Label lblNombre;
     @FXML
     private Label lblEdad;
-    @FXML
     private Label lblAmigos;
     @FXML
     private Label lblEnemigos;
     @FXML
     private Label lblCabello;
-    @FXML
     private Label lblGustos;
-    @FXML
     private Label lblDatos;
     @FXML
-    private Label amigos;
-    @FXML
     private Label gustos;
+    @FXML
+    private Label lblEstatura;
+    @FXML
+    private Label lblPoderes;
+    @FXML
+    private Label estatura;
     /**
      * Initializes the controller class.
      */
@@ -83,22 +84,30 @@ public class VistaPersonajeController implements Initializable {
     private void llenarCampos(){
         lblNombre.setText(personaje.getNombrePersonaje());
         lblEdad.setText(String.valueOf(personaje.getEdad()));
-        if(personaje.getAmigos().isEmpty()){
-            amigos.setVisible(false);
-            lblAmigos.setVisible(false);
-        }else{
-            lblAmigos.setText(personaje.getAmigos().toString());
-        }
         
         lblEnemigos.setText(personaje.getEnemigos().toString());
         lblCabello.setText(personaje.getColorCabello());
-        if(personaje.getGustos().isEmpty()){
-            gustos.setVisible(false);
-            lblGustos.setVisible(false);
+        lblPoderes.setText(personaje.getPoderes().toString());
+        /*
+        Duende verde 1,8 , Guason 1,82, Lex Luthor 1,90, Mr Freeze 1,83, Thanos  2,62, Gorr 1,60
+        */
+        if(personaje.getNombrePersonaje().equalsIgnoreCase("duende verde")){
+            lblEstatura.setText("1.80 metros");
+        }else if(personaje.getNombrePersonaje().equalsIgnoreCase("guason")){
+            lblEstatura.setText("1.82 metros");
+        }else if(personaje.getNombrePersonaje().equalsIgnoreCase("lex luthor")){
+            lblEstatura.setText("1.90 metros");
+        }else if(personaje.getNombrePersonaje().equalsIgnoreCase("mr freeze")){
+            lblEstatura.setText("1.83 metros");
+        }else if(personaje.getNombrePersonaje().equalsIgnoreCase("thanos")){
+            lblEstatura.setText("2.62 metros");
+        }else if(personaje.getNombrePersonaje().equalsIgnoreCase("gorr")){
+            lblEstatura.setText("1.60 metros");
         }else{
-            lblGustos.setText(personaje.getGustos().toString());
+            estatura.setVisible(false);
+            lblEstatura.setVisible(false);
         }
-        lblDatos.setText(personaje.getCaracteristicasExtra().toString());
+
     }
     
     

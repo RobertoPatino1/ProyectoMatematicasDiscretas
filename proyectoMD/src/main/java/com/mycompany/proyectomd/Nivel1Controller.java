@@ -95,7 +95,7 @@ public class Nivel1Controller implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         lblTitulo.setText("Relaciona a cada héroe con su villano!");
-
+        System.out.println(Lector.generarTarjetas());
         llenarCampos();
         preCambio();
     }    
@@ -274,11 +274,11 @@ public class Nivel1Controller implements Initializable {
             cambiarDeVentana();
         });
         imgGorr.setOnMouseClicked(eh->{
-            VistaPersonajeController.personaje = Lector.generarTarjetas().get(9);
+            VistaPersonajeController.personaje = Lector.generarTarjetas().get(11);
             cambiarDeVentana();
         });
         imgLoki.setOnMouseClicked(eh->{
-            VistaPersonajeController.personaje = Lector.generarTarjetas().get(7);
+            VistaPersonajeController.personaje = Lector.generarTarjetas().get(9);
             cambiarDeVentana();
         });
     }

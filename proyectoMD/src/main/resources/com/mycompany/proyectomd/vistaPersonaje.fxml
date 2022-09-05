@@ -41,18 +41,16 @@
                      <children>
                         <Label prefHeight="23.0" prefWidth="62.0" text="Nombre:" />
                         <Label text="Edad:" GridPane.rowIndex="1" />
-                        <Label fx:id="amigos" text="Amigos:" GridPane.rowIndex="2" />
+                        <Label fx:id="estatura" text="Estatura:" GridPane.rowIndex="2" />
                         <Label text="Enemigos:" GridPane.rowIndex="3" />
                         <Label text="Color de cabello:" GridPane.rowIndex="4" />
-                        <Label fx:id="gustos" text="Gustos" GridPane.rowIndex="5" />
-                        <Label text="Datos curiosos:" GridPane.rowIndex="6" />
+                        <Label fx:id="gustos" text="Poderes" GridPane.rowIndex="5" />
                         <Label fx:id="lblNombre" text="Label" GridPane.columnIndex="1" />
                         <Label fx:id="lblEdad" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                        <Label fx:id="lblAmigos" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label fx:id="lblEstatura" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                         <Label fx:id="lblEnemigos" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                         <Label fx:id="lblCabello" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                        <Label fx:id="lblGustos" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-                        <Label fx:id="lblDatos" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                        <Label fx:id="lblPoderes" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
                      </children>
                   </GridPane>
                </children>
