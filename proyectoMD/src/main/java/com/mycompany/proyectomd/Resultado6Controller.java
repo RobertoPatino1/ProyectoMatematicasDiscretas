@@ -51,12 +51,7 @@ public class Resultado6Controller implements Initializable {
        App.setRoot("finJuego");
         
     }
-    /*
-    "Muchas gracias por tu ayuda. Esta relación cumple las propiedades para ser tanto reflexiva(porque los personajes 
-    pueden tener su propia altura), transitiva(porque si spiderman es mas bajo que ironman e ironman mas bajo que thor entonces spiderman es mas bajo que ironman) y antisimetrica(porque 
-    nunca se dará el caso en el que superman sea mas bajo que batman pero siempre se dará que batman sea mas bajo que superman). 
-    Cuando una relación cumple con estas 3 propiedades se la conoce como: relacion de orden"
-    */
+
     private void llenarCampos(){
         cargarImagen("venom.jpg");
         lbl1.setText("\"Esta relación cumple las propiedades para ser reflexiva,ya que por ejemplo:\n spiderman mide lo mismo que spiderman\n" +
