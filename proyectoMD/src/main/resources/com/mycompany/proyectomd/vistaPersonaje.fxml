@@ -10,9 +10,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectomd.VistaPersonajeController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #9BF0F9; -fx-border-color: #01037B #01037B; -fx-border-width: 4; -fx-border-radius: 11;"  xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectomd.VistaPersonajeController">
    <top>
-      <Label fx:id="lblTitulo" text="Label" BorderPane.alignment="CENTER">
+      <Label fx:id="lblTitulo" text="Label" BorderPane.alignment="CENTER" style="-fx-text-fill: #01037B #01037B #01037B #01037B;">
          <font>
             <Font size="25.0" />
          </font>
@@ -39,18 +39,18 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
-                        <Label prefHeight="23.0" prefWidth="62.0" text="Nombre:" />
-                        <Label text="Edad:" GridPane.rowIndex="1" />
-                        <Label fx:id="estatura" text="Estatura:" GridPane.rowIndex="2" />
-                        <Label text="Enemigos:" GridPane.rowIndex="3" />
-                        <Label text="Color de cabello:" GridPane.rowIndex="4" />
-                        <Label fx:id="gustos" text="Poderes" GridPane.rowIndex="5" />
-                        <Label fx:id="lblNombre" text="Label" GridPane.columnIndex="1" />
-                        <Label fx:id="lblEdad" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                        <Label fx:id="lblEstatura" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                        <Label fx:id="lblEnemigos" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                        <Label fx:id="lblCabello" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                        <Label fx:id="lblPoderes" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Label prefHeight="23.0" prefWidth="62.0" text="Nombre:" style="-fx-text-fill: #01037B #01037B #01037B #01037B;"/>
+                        <Label text="Edad:" GridPane.rowIndex="1" style="-fx-text-fill: #01037B #01037B #01037B #01037B;"/>
+                        <Label fx:id="estatura" text="Estatura:" GridPane.rowIndex="2" style="-fx-text-fill: #01037B #01037B #01037B #01037B;"/>
+                        <Label text="Enemigos:" GridPane.rowIndex="3" style="-fx-text-fill: #01037B #01037B #01037B #01037B;"/>
+                        <Label text="Color de cabello:" GridPane.rowIndex="4" style="-fx-text-fill: #01037B #01037B #01037B #01037B;"/>
+                        <Label fx:id="gustos" text="Poderes" GridPane.rowIndex="5" style="-fx-text-fill: #01037B #01037B #01037B #01037B;"/>
+                        <Label fx:id="lblNombre" text="Label" GridPane.columnIndex="1" style="-fx-text-fill: #01037B #01037B #01037B #01037B;"/>
+                        <Label fx:id="lblEdad" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" style="-fx-text-fill: #01037B #01037B #01037B #01037B;"/>
+                        <Label fx:id="lblEstatura" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" style="-fx-text-fill: #01037B #01037B #01037B #01037B;"/>
+                        <Label fx:id="lblEnemigos" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" style="-fx-text-fill: #01037B #01037B #01037B #01037B;"/>
+                        <Label fx:id="lblCabello" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" style="-fx-text-fill: #01037B #01037B #01037B #01037B;"/>
+                        <Label fx:id="lblPoderes" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" style="-fx-text-fill: #01037B #01037B #01037B #01037B;"/>
                      </children>
                   </GridPane>
                </children>
