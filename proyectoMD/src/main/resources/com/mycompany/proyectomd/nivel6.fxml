@@ -31,7 +31,7 @@
                            <children>
                               <ImageView fx:id="imgBatman1" fitHeight="139.0" fitWidth="183.0" pickOnBounds="true" preserveRatio="true" />
                               <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="49.0" prefWidth="190.0" text="Batman tiene la misma &#10;altura o es más bajo que:" />
-                              <TextField prefHeight="25.0" prefWidth="179.0" />
+                              <TextField fx:id="txtBatman" prefHeight="25.0" prefWidth="179.0" />
                            </children>
                            <FlowPane.margin>
                               <Insets bottom="20.0" right="20.0" />
