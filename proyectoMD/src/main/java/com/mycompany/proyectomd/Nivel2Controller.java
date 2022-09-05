@@ -68,6 +68,7 @@ public class Nivel2Controller implements Initializable {
        int r3 = comprobarThor(txtThor1.getText());
        int r4 = comprobarIronman(txtIronman1.getText());
         System.out.println(r1+r2+r3+r4);
+        Resultado2Controller.totalPuntos = r1+r2+r3+r4;
         
         App.setRoot("resultado2");
     }
