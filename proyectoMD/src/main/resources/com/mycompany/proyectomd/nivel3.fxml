@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="449.0" prefWidth="698.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectomd.Nivel3Controller">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="449.0" prefWidth="698.0" style="-fx-background-color: #9BF0F9; -fx-border-color: #01037B #01037B; -fx-border-width: 4; -fx-border-radius: 11;"  xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectomd.Nivel3Controller">
    <center>
       <HBox alignment="CENTER" prefHeight="406.0" prefWidth="784.0" BorderPane.alignment="CENTER">
          <children>
@@ -37,7 +37,7 @@
          <children>
             <VBox alignment="CENTER" prefHeight="168.0" prefWidth="241.0">
                <children>
-                  <Label text="Iron-Man">
+                  <Label text="Iron-Man" style="-fx-text-fill: #01037B #01037B #01037B #01037B;">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
@@ -45,7 +45,7 @@
                         <Insets bottom="15.0" />
                      </VBox.margin>
                   </Label>
-                  <Label text="Thor">
+                  <Label text="Thor" style="-fx-text-fill: #01037B #01037B #01037B #01037B;">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
@@ -60,7 +60,7 @@
             </VBox>
             <VBox alignment="CENTER" prefHeight="168.0" prefWidth="213.0">
                <children>
-                  <Label fx:id="lbl" text="es más viejo que">
+                  <Label fx:id="lbl" text="es más viejo que" style="-fx-text-fill: #01037B #01037B #01037B #01037B;">
                      <VBox.margin>
                         <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
                      </VBox.margin>
@@ -68,7 +68,7 @@
                         <Font name="System Bold Italic" size="18.0" />
                      </font>
                   </Label>
-                  <Label text="es más viejo que">
+                  <Label text="es más viejo que" style="-fx-text-fill: #01037B #01037B #01037B #01037B;">
                      <VBox.margin>
                         <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
                      </VBox.margin>
@@ -76,7 +76,7 @@
                         <Font name="System Bold Italic" size="18.0" />
                      </font>
                   </Label>
-                  <Button mnemonicParsing="false" onAction="#switchToResultados3" text="Terminar" />
+                  <Button mnemonicParsing="false" onAction="#switchToResultados3" text="Terminar" style="-fx-border-color: #01037B; -fx-border-radius: 6; -fx-border-insets: -1; -fx-border-width: 3; -fx-background-color: #2DA3F9; -fx-text-fill: #01037B #01037B; -fx-font-style: italic;"/>
                </children>
             </VBox>
             <VBox alignment="CENTER" prefHeight="148.0" prefWidth="176.0">
@@ -100,10 +100,11 @@
       </HBox>
    </bottom>
    <top>
-      <Label text="Ordena  a los vengadores por su edad!" BorderPane.alignment="CENTER">
+      <Label text="Ordena  a los vengadores por su edad!" BorderPane.alignment="CENTER" style="-fx-text-fill: #01037B #01037B #01037B #01037B;">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
    </top>
 </BorderPane>
+
