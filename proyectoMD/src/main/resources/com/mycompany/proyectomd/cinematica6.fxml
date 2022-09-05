@@ -17,9 +17,9 @@
          </font></Label>
    </top>
    <center>
-      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+      <VBox alignment="CENTER" prefHeight="276.0" prefWidth="592.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fx:id="imgviewPersonaje" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="imgviewPersonaje" fitHeight="138.0" fitWidth="194.0" pickOnBounds="true" preserveRatio="true" />
             <Label fx:id="lblTextoCinematica" style="-fx-text-fill: #01037B #01037B #01037B #01037B;" text="Label">
                <VBox.margin>
                   <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
@@ -32,7 +32,7 @@
       </VBox>
    </center>
    <bottom>
-      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <HBox alignment="CENTER" prefHeight="72.0" prefWidth="592.0" BorderPane.alignment="CENTER">
          <children>
             <Button fx:id="btnJugar" mnemonicParsing="false" onAction="#nivel6" style="-fx-border-color: #01037B; -fx-border-radius: 6; -fx-border-insets: -1; -fx-border-width: 3; -fx-background-color: #2DA3F9; -fx-text-fill: #01037B #01037B; -fx-font-style: italic;" text="Jugar!">
                <font>
